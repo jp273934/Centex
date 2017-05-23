@@ -19,5 +19,10 @@ namespace Centex.Controllers
             
             return View(_model);
         }
+
+        public ActionResult Service()
+        {
+            return View();
+        }
     }
 }

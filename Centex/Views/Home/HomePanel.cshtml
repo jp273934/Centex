@@ -1,6 +1,20 @@
 ﻿@model Centex.Models.Panel
-<div class="col-lg-4">
-    <h3 style="text-align: center;">@Model.Title</h3>
-    <img src="@Model.ImagePath" style="width: 100%; height: 30vh;" />
-    <p>@Model.Description</p>
+<div class="col-lg-6">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <img src="@Model.ImagePath" style="width: 100%; height: 30vh;" />
+            <h3 style="text-align: center;">@Model.Title</h3>
+            <div style="height: 10vh;">
+                <p>@Model.Description</p>
+            </div>
+            
+            <div style="text-align: center;">
+                @Html.ActionLink("Read More", "Product", "Home", new { Model.Id }, new { @class = "btn btn-danger" })
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    
 </div>

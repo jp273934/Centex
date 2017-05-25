@@ -73,7 +73,7 @@
     </div><!-- /.container-fluid -->
 </nav>
     
-    <nav class="navbar navbar-default navbar-fixed-top" style="top: 100px; z-index: 1029;">
+    <nav class="navbar navbar-default navbar-fixed-top" style="top: 90px; z-index: 1029;">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -94,11 +94,21 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
+                            <li>@Html.ActionLink("Preventive Maintenance", "Service", "Home", new { Id = 0}, null)</li>
+                            <li>@Html.ActionLink("Certified Load Test", "Service", "Home", new { Id = 1 }, null)</li>
+                            <li>@Html.ActionLink("Inspections and Repairs", "Service", "Home", new { Id = 2 }, null)</li>
+                            <li>@Html.ActionLink("Relocation", "Service", "Home", new { Id = 3 }, null)</li>
+                            <li>@Html.ActionLink("Modifications and Upgrades", "Service", "Home", new { Id = 4 }, null)</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Bridge Cranes", "Product", "Home", new { Id = 0 }, null)</li>
+                            <li>@Html.ActionLink("Pallet Racks", "Product", "Home", new { Id = 1 }, null)</li>
+                            <li>@Html.ActionLink("Dock Levers", "Product", "Home", new { Id = 2 }, null)</li>
+                            <li>@Html.ActionLink("Recycling Equipment", "Product", "Home", new { Id = 3 }, null)</li>
+                            <li>@Html.ActionLink("Wire Shelvings", "Product", "Home", new { Id = 4 }, null)</li>
                         </ul>
                     </li>
                     <li><a href="#">Contact</a></li>
@@ -107,7 +117,7 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-<div class="container-fluid" style="padding-top: 50px;">
+<div class="container-fluid" style="padding-top: 100px;">
     <div class="row">
         <div class="col-lg-offset-1 col-lg-10" style="background-color: #fff;">
             @RenderBody();

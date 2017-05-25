@@ -11,9 +11,10 @@ namespace Centex.Controllers
             return View(service.GetModel());
         }
 
-        public ActionResult Service()
+        public ActionResult Service(int Id)
         {
-            return View();
+            var service = new Service();
+            return View(service.GetModel((ServiceCategories)Id));
         }
 
         public ActionResult Product(int Id)

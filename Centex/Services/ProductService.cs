@@ -10,7 +10,7 @@ namespace Centex.Services
         Palletrack,
         Docklever,
         Recyling,
-        Wireshelvings
+        Shelvings
     }
 
     public class ProductService
@@ -28,8 +28,8 @@ namespace Centex.Services
                         return GetDockLever();
                     case ProductCategories.Recyling:
                         return GetRecyclingEqupment();
-                    case ProductCategories.Wireshelvings:
-                        return GetWireShelvings();
+                    case ProductCategories.Shelvings:
+                        return GetShelvings();
                    default:
                        throw  new Exception("Category not found");
             }
@@ -58,8 +58,8 @@ namespace Centex.Services
         {
             var description = new List<string>
             {
-                "CMH specializes in various types of pallet racks like Cantilever racking, Clad Rack, Conventional, Drive in, Push back racks.",
-                "Call CMH for an application specialist that can come to your facility, review your requirements, and provide you with the right rack for your needs."
+                "Pallet Racking is a storage system that increases the capacity of your existing warehouse, improves the overall workflow and efficiency, and leads to a more organized shop, factory, warehouse, distribution or logistics center.",
+                "CMH specializes in warehouse pallet racking systems and warehouse shelving. Our Selective Pallet Racks, Structural Pallet Racks, Cantilever Racks, Drive-In Pallet Racks, Push-Back Racks, Carton Flow Racks, Pallet Flow Racks. Each of these racking systems serve a similar purpose, but vary in functionality and application. Depending on available space in your facility and style of inventory management, you will find the perfect warehouse racking for your facility here at Centex Material Handling."
             };
 
             var product = new Product
@@ -106,11 +106,11 @@ namespace Centex.Services
             return product;
         }
 
-        private Product GetWireShelvings()
+        private Product GetShelvings()
         {
             var description = new List<string>
             {
-                "Wire shelvings description"
+                "CMH offers a variety of warehouse shelving solutions including boltless shelving, archive shelving, bulk rack shelving, and chrome wire shelving. Boltless and archive shelving are easy to install with little to no hardware required, and can be easily customized to fit your facility and needs. Chrome wire shelving is perfect for organization while maintaining air circulation and light. These shelves are also very easy to assemble, easy to expand as your needs grow, and help keep your inventory and items fully visible. Bulk racks are ideal for multi-level storage of hardware, tools, and heavy duty items. Bulk racking is available in various configurations, and come standard with particle board decking with the optional upgrade to wire mesh decking."
             };
 
             var product = new Product

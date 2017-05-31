@@ -1,4 +1,5 @@
-﻿using Centex.Services;
+﻿using Centex.Models;
+using Centex.Services;
 using System.Web.Mvc;
 
 namespace Centex.Controllers
@@ -21,6 +22,16 @@ namespace Centex.Controllers
         {
             var service = new ProductService();
             return View(service.GetProduct((ProductCategories)Id));
+        }
+
+        [HttpPost]
+        public JsonResult SendMessage(Contact message)
+        {
+            var service = new EmailService();
+
+            service.SendEmail(message);
+
+            return Json("Succes", JsonRequestBehavior.AllowGet);
         }
     }
 }

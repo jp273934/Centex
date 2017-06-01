@@ -24,6 +24,11 @@ namespace Centex.Controllers
             return View(service.GetProduct((ProductCategories)Id));
         }
 
+        public ActionResult Catalog()
+        {
+            return View();
+        }
+
         [HttpPost]
         public JsonResult SendMessage(Contact message)
         {

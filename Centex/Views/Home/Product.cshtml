@@ -5,22 +5,34 @@
 }
 
 <div class="row" style="padding-top: 20vh;">
-    <div class="col-lg-12">
+    <div class="col-lg-offset-2 col-lg-8">
         <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-8">
                 <div class="panel panel-default" style="border: none;">
                     <div class="panel-body">
-                        <h3>@Model.Title</h3>
-                        <img src="@Model.ImagePath" style="float: right; width: 25vw;" />
+                        <h3 style="font-weight: bold;">@Model.Title</h3>
+                        @*<img src="@Model.ImagePath" style="float: right; width: 25vw;" />*@
                         @foreach (var item in @Model.Descriptions)
                         {
                             <p>@item</p>
+                        }
+                        
+                        @if (@Model.ListDescriptions != null && @Model.ListDescriptions.Any())
+                        {
+                            <ul>
+                                @foreach (var item in @Model.ListDescriptions)
+                                {
+                                    <li>
+                                        @item
+                                    </li>
+                                }
+                            </ul>
                         }
                     </div>
                 </div>
                
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 <div class="panel panel-default" style="border: none;">
                     <div class="panel-body">
                         @Html.Partial("ContactPanel")

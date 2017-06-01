@@ -6,11 +6,12 @@ namespace Centex.Services
 {
     public enum ProductCategories
     {
-        Bridgecrane,
+        Crane,
         Palletrack,
-        Docklever,
-        Recyling,
-        Shelvings
+        DockEquipment,
+        Shelvings,
+        Conveyors,
+        Messanines
     }
 
     public class ProductService
@@ -20,35 +21,51 @@ namespace Centex.Services
 
             switch (category)
             {
-                   case ProductCategories.Bridgecrane:
-                       return GetBridgeCrane();
+                   case ProductCategories.Crane:
+                       return GetCrane();
                    case ProductCategories.Palletrack:
-                       return GetPalletRack();
-                    case ProductCategories.Docklever:
-                        return GetDockLever();
-                    case ProductCategories.Recyling:
-                        return GetRecyclingEqupment();
+                       return GetPalletRack();                   
                     case ProductCategories.Shelvings:
                         return GetShelvings();
+                    case ProductCategories.DockEquipment:
+                        return GetDockEquipment();
+                    case ProductCategories.Conveyors:
+                        return GetConveyors();
+                    case ProductCategories.Messanines:
+                        return GetMessanine();
                    default:
                        throw  new Exception("Category not found");
             }
         }
 
-        private Product GetBridgeCrane()
+        private Product GetCrane()
         {
             var descriptions = new List<string>
             {
-                "CMH represents the tope crane manufacturers in the world. Whether you need a Bridge Cranes (1-125 tons) or Workstation Cranes (150-4000lbs), CMH can supply you with the right crane for your application.",
-                "CMH provides complete crane services including engineering, weight test certification, annual crane inspections, and repairs.",
-                "Call CMH for an application specialist that can come to your facility, review your requirements, and provide you with the right crane for your needs"
+                "CMH designs, manufactures, installs and services complete overhead material handling systems and stocks hoists, trolleys, accessories, replacement parts and provides service for most major brands.",
+                "We design, manufacture and install complete overhead material handling systems. Bridge cranes, Hoists, Chain Hoists, Wire Rope Hoists, Air Hoists, pendant controls, Radio controls. Top Running Single Girder, Under Running Single Girder, Top Running Double Girder, Under Running Double Girder, Gantry Crane, Single Leg Gantry Crane, Floor Mount Jib Crane, Wall Mount Jib Cranes, Free Standing Work Stations."
+            };
+
+            var listDescriptions = new List<string>
+            {
+                "Emergency Repair 24 hour availability",
+                "Repair Most brands of hoists and cranes",
+                "Crane & Hoist Repair Parts for all brands",
+                "Service Scheduled preventative maintenance programs",
+                "Load Testing Certified proof load testing of cranes & hoists",
+                "OSHA Certifications Inspections and testing for OSHA compliance",
+                "Modernization, Modification, and upgrades to your existing crane systems",
+                "Below the Hook Slings, spreader bars, lifting attachments",
+                "Ergonomic Systems Light capacity handling systems for assembly, warehouse and distribution handling",
+                "Turnkey Crane Systems "
             };
 
             var product = new Product
             {
-                Title = "Bridge Cranes",
+                Title = "Cranes",
                 ImagePath = "/Images/bridgecrane.jpg",
-                Descriptions = descriptions
+                Descriptions = descriptions,
+                ListDescriptions = listDescriptions
             };
 
             return product;
@@ -64,7 +81,7 @@ namespace Centex.Services
 
             var product = new Product
             {
-                Title = "Pallet Rack",
+                Title = "Pallet Racks",
                 ImagePath = "/Images/Pallet.jpg",
                 Descriptions = description
             };
@@ -72,34 +89,17 @@ namespace Centex.Services
             return product;
         }
 
-        private Product GetDockLever()
+        private Product GetDockEquipment()
         {
             var description = new List<string>
             {
-                "CMH supplies and installs a full range of dock equipment. Whether your company requires simple dock bumpers and accessories or a complete in-pit leveler and truck restraint, count on CMH to help you get the right equipment for your needs."
+                "Centex Material Handling offers Access Ramps, Dock Boards, Dock Plates, Dock Levelers, and Wheel Risers to make your loading and unloading procedures a breeze! Consult our experts on what dock equipment would be ideal for your warehouse loading docks, and take the first step to streamlining your company’s shipping and receiving processes."
             };
 
             var product = new Product
             {
-                Title = "Dock Levers",
+                Title = "Loading Dock Equipment",
                 ImagePath = "/Images/Main_Desc.png",
-                Descriptions = description
-            };
-
-            return product;
-        }
-
-        private Product GetRecyclingEqupment()
-        {
-            var description = new List<string>
-            {
-                "Recycling equipment description"
-            };
-
-            var product = new Product
-            {
-                Title = "Recycling Equipment",
-                ImagePath = "/Images/RecyclingEquipment.jpg",
                 Descriptions = description
             };
 
@@ -115,8 +115,40 @@ namespace Centex.Services
 
             var product = new Product
             {
-                Title = "Recycling Equipment",
+                Title = "Shelvings",
                 ImagePath = "/Images/WireShelving.jpg",
+                Descriptions = description
+            };
+
+            return product;
+        }
+
+        private Product GetConveyors()
+        {
+            var description = new List<string>
+            {
+                "A conveyor system is a common piece of mechanical handling equipment that moves materials from one location to another. Conveyors are especially useful in applications involving the transportation of heavy or bulky materials. Conveyor systems allow quick and efficient transportation for a wide variety of materials, which make them very popular in the material handling and packaging industries. Many kinds of conveying systems are available, and are used according to the various needs of different industries."
+            };
+
+            var product = new Product
+            {
+                Title = "Conveyors",
+                Descriptions = description
+            };
+
+            return product;
+        }
+
+        private Product GetMessanine()
+        {
+            var description = new List<string>
+            {
+                "Warehouse mezzanines and catwalks allow you to greatly increase the utilization of your square footage. Increase space efficiency and organization of your facility with a catwalk or mezzanine platform. Warehouse Mezzanines efficiently use the height of a facility, while doubling or even tripling the surface area. Mezzanines can be the most economical way to increase warehouse space without having to expand or relocate from Southern California. There are many important factors to consider when designing a mezzanine, including access-ways, work systems, products, and handling methods in order to plan accurately. Mezzanines may be completely disassembled; the parts re-used; and the structure, dimensions, and location easily modified."
+            };
+
+            var product = new Product
+            {
+                Title = "Warehouse Messanines",
                 Descriptions = description
             };
 

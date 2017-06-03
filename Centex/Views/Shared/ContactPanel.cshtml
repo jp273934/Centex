@@ -1,34 +1,44 @@
 ﻿<div class="panel panel-default" ng-app="app" ng-controller="ContactController" style="border: none;">
-    @*<div class="panel-heading">
-        <h3 class="panel-title">Contact US</h3>
-    </div>*@
-    <div class="panel-body" ng-show="!isSendingMessage">
-        <div class="form-group">
-            <label class="control-label" for="focusedInput">First Name</label>
-            <input class="form-control" type="text" ng-model="contact.FirstName">
-        </div>
-        <div class="form-group">
-            <label class="control-label" for="focusedInput">Last Name</label>
-            <input class="form-control" type="text" ng-model="contact.LastName">
-        </div>
-        <div class="form-group">
-            <label class="control-label" for="focusedInput">Email Address</label>
-            <input class="form-control" type="text" ng-model="contact.Email">
-        </div>
-        <div class="form-group">
-            <label class="control-label" for="focusedInput">Mailing Address</label>
-            <input class="form-control" type="text" ng-model="contact.AddressOne"><br />
-            <input class="form-control" type="text" ng-model="contact.AddressTwo">
-        </div>
-        <div class="form-group">
-            <label class="control-label" for="focusedInput">Message</label>
-            <textarea class="form-control" rows="3" id="textArea" ng-model="contact.Message"></textarea>
-        </div>
-        <div class="form-group" style="text-align: right;">
-            <a href="#" class="btn btn-primary" ng-click="sendMessage()">Send Message</a>
-
-        </div>
+    <div class="panel-body" ng-show="showPanel">
+        <ng-form name="ContactForm" novalidate>
+            <div class="form-group">
+                <label class="control-label" for="focusedInput">First Name</label><br/>
+                <span ng-show="ContactForm.firstName.$invalid && isSubmitted" class="text-danger">First Name is required</span>
+                <input class="form-control" type="text" ng-model="contact.FirstName" name="firstName" ng-required="true">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="focusedInput">Last Name</label><br/>
+                <span ng-show="ContactForm.lastName.$invalid && isSubmitted" class="text-danger">Last Name is required</span>
+                <input class="form-control" type="text" ng-model="contact.LastName" name="lastName" ng-required="true">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="focusedInput">Email Address</label><br/>
+                <span ng-show="ContactForm.emailField.$invalid && isSubmitted" class="text-danger">Email address is required</span><br/>
+                <span ng-show="ContactForm.emailField.$error.pattern && isSubmitted" class="text-danger">That is not a valid email address</span>
+                <input class="form-control" type="email" ng-model="contact.Email" name="emailField" ng-required="true" ng-pattern="/^[^\s&#64]+&#64[^\s&#64]+\.[^\s&#64]{3,}$/">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="focusedInput">Mailing Address</label><br/>
+                <span ng-show="ContactForm.address.$invalid && isSubmitted" class="text-danger">Address is required</span>
+                <input class="form-control" type="text" ng-model="contact.AddressOne" name="address" ng-required="true"><br />
+                <input class="form-control" type="text" ng-model="contact.AddressTwo">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="focusedInput">Message</label><br/>
+                <span ng-show="ContactForm.message.$invalid && isSubmitted" class="text-danger">Message is required</span>
+                <textarea class="form-control" rows="3" id="textArea" ng-model="contact.Message" name="message" ng-required="true"></textarea>
+            </div>
+            <div class="form-group" style="text-align: right;">
+                <a href="#" class="btn btn-primary" ng-click="sendMessage()">Send Message</a>
+            </div>
+        </ng-form>
     </div>
-    
-    <p ng-show="isMessageSent">Thank you for contacting us. Some one will be in touch with your soon.</p>
+
+    <p ng-show="isMessageSent" class="text-success">Thank you for contacting us. Some one will be in touch with your soon.</p>
+
+    <div ng-show="isSendingMessage">
+        <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+        <span>Sending Message...</span>
+    </div>
+
 </div>

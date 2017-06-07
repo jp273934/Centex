@@ -153,6 +153,9 @@
     <Content Include="Images\greencrane.jpg" />
     <Content Include="Images\lanes.jpg" />
     <Content Include="Images\loadtest.jpg" />
+    <Content Include="Images\Logos\crane.png" />
+    <Content Include="Images\Logos\loadingdock.png" />
+    <Content Include="Images\Logos\shelving.png" />
     <Content Include="Images\Main_Desc.png" />
     <Content Include="Images\modification.jpg" />
     <Content Include="Images\Pallet.jpg" />
@@ -164,7 +167,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Images\PalletRockLogo.png" />
+    <Content Include="Images\Logos\PalletRockLogo.png" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />
@@ -953,7 +956,9 @@
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\Modules\app.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\Home\Service.cshtml" />
     <Content Include="Views\Home\HomePanel.cshtml" />
   </ItemGroup>
@@ -1015,7 +1020,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49873</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49873/</IISUrl>
+          <IISUrl>http://localhost:44332/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

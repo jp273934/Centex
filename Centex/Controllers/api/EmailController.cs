@@ -1,5 +1,5 @@
 ﻿using Centex.Models;
-using Centex.Services;
+using Centex.Services.Contact;
 using System.Web.Http;
 
 namespace Centex.Controllers.api

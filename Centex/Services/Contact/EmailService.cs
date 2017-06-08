@@ -1,11 +1,11 @@
-﻿using Centex.Models;
+﻿using Centex.Services.Contact.Interfaces;
 using System.Net.Mail;
 
-namespace Centex.Services
+namespace Centex.Services.Contact
 {
-    public class EmailService
+    public class EmailService : IEmailService
     {
-        public void SendEmail(Contact message)
+        public void SendEmail(Models.Contact message)
         {
             var fromAddress = new MailAddress("jparris195@gmail.com", "Jeremy Parris");
             var toAddress = new MailAddress("jparris195@gmail.com", "Jeremy Parris");

@@ -1,8 +1,9 @@
 ﻿using Centex.Models;
+using Centex.Services.Products.Interfaces;
 using System;
 using System.Collections.Generic;
 
-namespace Centex.Services
+namespace Centex.Services.Products
 {
     public enum ProductCategories
     {
@@ -14,7 +15,7 @@ namespace Centex.Services
         Messanines
     }
 
-    public class ProductService
+    public class ProductService : IProductService
     {
         public Product GetProduct(ProductCategories category)
         {

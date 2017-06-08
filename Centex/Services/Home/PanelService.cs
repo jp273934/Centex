@@ -1,25 +1,12 @@
 ﻿using Centex.Models;
-using Centex.ViewModels;
+using Centex.Services.Home.Interfaces;
 using System.Collections.Generic;
 
-namespace Centex.Services
+namespace Centex.Services.Home
 {
-    public class HomeViewModelService
+    public class PanelService : IPanelService
     {
-        private readonly HomeViewModel _model;
-
-        public HomeViewModelService()
-        {
-            _model = new HomeViewModel();
-        }
-
-        public HomeViewModel GetModel()
-        {
-            _model.Panels = GetPanels();
-            return _model;
-        }
-
-        private IEnumerable<Panel> GetPanels()
+        public IEnumerable<Panel> GetPanels()
         {
             var panels = new List<Panel>
             {
@@ -33,7 +20,7 @@ namespace Centex.Services
                 new Panel
                 {
                     Id = 1,
-                    Title = "Pallet Racks",
+                    Title = "Pallet Rack",
                     Description = "CMH represents the top crane manufactures in the world. Whether you need a Bridge Cranes (1-125 tons) or Workstation Cranes (150-4000lbs), CMH can supply you with the right crane for your application",
                     ImagePath = "/Images/Logos/PalletRockLogo.png"
                 },
@@ -46,19 +33,19 @@ namespace Centex.Services
                 new Panel
                 {
                     Id = 3,
-                    Title = "Shelvings",
+                    Title = "Shelving",
                     Description = "Recycling equipment description",
                     ImagePath = "/Images/Logos/shelving.png"                },
                 new Panel
                 {
                     Id = 4,
-                    Title = "Conveyors",
+                    Title = "Conveyor",
                     Description = "Wire shelvings description",
                     ImagePath = "/Images/Logos/PalletRockLogo.png"                },
                 new Panel
                 {
                     Id = 5,
-                    Title = "Warehouse Mezzanines",
+                    Title = "Mezzanine",
                     ImagePath = "/Images/Logos/PalletRockLogo.png"
                 }
             };

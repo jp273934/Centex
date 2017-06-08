@@ -1,8 +1,9 @@
 ﻿using Centex.Models;
+using Centex.Services.ServiceObjects.Interfaces;
 using System;
 using System.Collections.Generic;
 
-namespace Centex.Services
+namespace Centex.Services.ServiceObjects
 {
     public enum ServiceCategories
     {
@@ -13,7 +14,7 @@ namespace Centex.Services
         Modificationupgrades
     }
 
-    public class Service
+    public class Service : IService
     {
         public ServiceModel GetModel(ServiceCategories category)
         {

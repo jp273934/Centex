@@ -8,16 +8,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     
-    <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <link href="~/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    
+    <link href="~/node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.min.css" rel="stylesheet" />
+    <a href="~/node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.min.css.map">~/node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.min.css.map</a>
+    <link href="~/node_modules/bootstrap-material-design/dist/css/ripples.min.css" rel="stylesheet" />
+    
+
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/node_modules/bootstrap-material-design/dist/js/material.min.js"></script>
+    <script src="~/node_modules/bootstrap-material-design/dist/js/ripples.min.js"></script>
+
+    <script src="~/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
 
-    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
+   
+  
     <script src="~/Scripts/angular.min.js"></script>
     <script src="~/Scripts/Modules/app.js"></script>
     <script src="~/Scripts/Controllers/ContactCtrl.js"></script>
-
+    
+    <script>
+        $(document).ready(function() {
+            $.material.init();
+        });
+    </script>
     <title>Centex Material Handling</title>
 </head>
 
@@ -50,52 +69,55 @@
         </div><!-- /.container-fluid -->
 </nav>
     
-    <nav class="navbar navbar-default navbar-fixed-top" style="top: 10vh; z-index: 1029; height: 7.5vh;">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @*<a class="navbar-brand" href="#">Centex Material Handling</a>*@
-            </div>
+<nav class="navbar navbar-default navbar-fixed-top" style="top: 10vh; z-index: 1029; height: 7.5vh; background-color: #000;">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @*<a class="navbar-brand" href="#">Centex Material Handling</a>*@
+        </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="navbar-collapse collapse navbar-responsive-collapse" id="bs-example-navbar-collapse-2" style="background-color: #000;">
 
-                <ul class="nav navbar-nav" style="padding-top: 1.5vh; background-color: #222;">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Preventive Maintenance", "Service", "Home", new { Id = 0}, null)</li>
-                            <li>@Html.ActionLink("Certified Load Test", "Service", "Home", new { Id = 1 }, null)</li>
-                            <li>@Html.ActionLink("Inspections and Repairs", "Service", "Home", new { Id = 2 }, null)</li>
-                            <li>@Html.ActionLink("Relocation", "Service", "Home", new { Id = 3 }, null)</li>
-                            <li>@Html.ActionLink("Modifications and Upgrades", "Service", "Home", new { Id = 4 }, null)</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Cranes", "Product", "Home", new { Id = 0 }, null)</li>
-                            <li>@Html.ActionLink("Pallet Racks", "Product", "Home", new { Id = 1 }, null)</li>
-                            <li>@Html.ActionLink("Loading Dock Equipment", "Product", "Home", new { Id = 2 }, null)</li>
-                            <li>@Html.ActionLink("Shelvings", "Product", "Home", new { Id = 3 }, null)</li>
-                            <li>@Html.ActionLink("Conveyors", "Product", "Home", new { Id = 4 }, null)</li>
-                            <li>@Html.ActionLink("Warehouse Mezzanines", "Product", "Home", new { Id = 5 }, null)</li>
-                        </ul>
-                    </li>
-                    <li>@Html.ActionLink("Product Catalog", "Catalog", "Home")</li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            <ul class="nav navbar-nav" style="padding-top: 1.25vh;">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("Preventive Maintenance", "Service", "Home", new { Id = 0}, null)</li>
+                        <li>@Html.ActionLink("Certified Load Test", "Service", "Home", new { Id = 1 }, null)</li>
+                        <li>@Html.ActionLink("Inspections and Repairs", "Service", "Home", new { Id = 2 }, null)</li>
+                        <li>@Html.ActionLink("Relocation", "Service", "Home", new { Id = 3 }, null)</li>
+                        <li>@Html.ActionLink("Modifications and Upgrades", "Service", "Home", new { Id = 4 }, null)</li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Popular Products <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("Cranes", "Product", "Home", new { Id = 0 }, null)</li>
+                        <li>@Html.ActionLink("Pallet Racks", "Product", "Home", new { Id = 1 }, null)</li>
+                        <li>@Html.ActionLink("Loading Dock Equipment", "Product", "Home", new { Id = 2 }, null)</li>
+                        <li>@Html.ActionLink("Shelvings", "Product", "Home", new { Id = 3 }, null)</li>
+                        <li>@Html.ActionLink("Conveyors", "Product", "Home", new { Id = 4 }, null)</li>
+                        <li>@Html.ActionLink("Warehouse Mezzanines", "Product", "Home", new { Id = 5 }, null)</li>
+                    </ul>
+                </li>
+                <li>@Html.ActionLink("Complete Product Catalog", "Catalog", "Home")</li>
+                <li><a href="#">Contact</a></li>
+            </ul>
                
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-            @RenderBody();     
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="container-fluid">
+    @RenderBody();
+
+</div>
 </body>
 </html>

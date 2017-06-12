@@ -280,6 +280,12 @@ namespace Centex.Services.Catalog
                     Id = 47,
                     Name = "Work Benches",
                     Url = "http://centexmaterialhandling.theonlinecatalog.com/store/work-benches/"
+                },
+                  new CatalogItem
+                {
+                    Id = 48,
+                    Name = "Main",
+                    Url = "http://centexmaterialhandling.theonlinecatalog.com/store/"
                 }
             };
         }

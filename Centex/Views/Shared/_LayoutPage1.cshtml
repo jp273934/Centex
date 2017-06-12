@@ -38,9 +38,22 @@
         });
     </script>
     <title>Centex Material Handling</title>
+    <style>
+        .panel {
+            box-shadow: none;
+        }
+
+        .form-group {
+            margin-top: 2px;
+        }
+
+        p {
+            font-size: 1.3em;
+        }
+    </style>
 </head>
 
-<body>
+<body style="background-color: #fff;">
 
 <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #fff;">
     <div class="container-fluid">
@@ -108,7 +121,7 @@
                         <li>@Html.ActionLink("Warehouse Mezzanines", "Product", "Home", new { Id = 5 }, null)</li>
                     </ul>
                 </li>
-                <li>@Html.ActionLink("Complete Product Catalog", "Catalog", "Home")</li>
+                <li>@Html.ActionLink("Complete Product Catalog", "Catalog", "Home", new {Id = 48}, null)</li>
                 <li><a href="#">Contact</a></li>
             </ul>
                

@@ -10,7 +10,7 @@
             <div class="col-lg-8">
                 <div class="panel panel-default" style="border: none;">
                     <div class="panel-body">
-                        <h3 style="font-weight: bold;">@Model.Title</h3>
+                        <h2>@Model.Title</h2>
                         @*<img src="@Model.ImagePath" style="float: right; width: 25vw;" />*@
                         @foreach (var item in @Model.Descriptions)
                         {
@@ -22,7 +22,7 @@
                             <ul>
                                 @foreach (var item in @Model.ListDescriptions)
                                 {
-                                    <li>
+                                    <li style="font-size: 1.3em;">
                                         @item
                                     </li>
                                 }

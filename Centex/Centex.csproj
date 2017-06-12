@@ -1787,6 +1787,7 @@
     <Content Include="Views\Shared\ContactPanel.cshtml" />
     <Content Include="Scripts\version.json" />
     <Content Include="Views\Home\Catalog.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

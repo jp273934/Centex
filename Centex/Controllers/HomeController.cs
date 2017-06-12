@@ -48,6 +48,11 @@ namespace Centex.Controllers
             return View(_catalogService.GetCataLogItemById(Id));
         }
 
+        public ActionResult Contact()
+        {
+            return View();
+        }
+
         [HttpPost]
         public JsonResult SendMessage(Contact message)
         {

@@ -169,8 +169,12 @@
     <Content Include="Images\greencrane.jpg" />
     <Content Include="Images\lanes.jpg" />
     <Content Include="Images\loadtest.jpg" />
+    <Content Include="Images\Logos\Akro.png" />
     <Content Include="Images\Logos\crane.png" />
+    <Content Include="Images\Logos\Demag.png" />
+    <Content Include="Images\Logos\Gorbel.png" />
     <Content Include="Images\Logos\loadingdock.png" />
+    <Content Include="Images\Logos\Mallux.png" />
     <Content Include="Images\Logos\shelving.png" />
     <Content Include="Images\Main_Desc.png" />
     <Content Include="Images\modification.jpg" />

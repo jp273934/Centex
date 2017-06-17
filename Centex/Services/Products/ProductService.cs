@@ -66,7 +66,8 @@ namespace Centex.Services.Products
                 Title = "Cranes",
                 ImagePath = "/Images/bridgecrane.jpg",
                 Descriptions = descriptions,
-                ListDescriptions = listDescriptions
+                ListDescriptions = listDescriptions,
+                CatalogId = 9
             };
 
             return product;
@@ -84,7 +85,8 @@ namespace Centex.Services.Products
             {
                 Title = "Pallet Racks",
                 ImagePath = "/Images/Pallet.jpg",
-                Descriptions = description
+                Descriptions = description,
+                CatalogId = 30
             };
 
             return product;
@@ -101,7 +103,8 @@ namespace Centex.Services.Products
             {
                 Title = "Loading Dock Equipment",
                 ImagePath = "/Images/Main_Desc.png",
-                Descriptions = description
+                Descriptions = description,
+                CatalogId = 10
             };
 
             return product;
@@ -118,7 +121,8 @@ namespace Centex.Services.Products
             {
                 Title = "Shelvings",
                 ImagePath = "/Images/WireShelving.jpg",
-                Descriptions = description
+                Descriptions = description,
+                CatalogId = 38
             };
 
             return product;
@@ -134,7 +138,8 @@ namespace Centex.Services.Products
             var product = new Product
             {
                 Title = "Conveyors",
-                Descriptions = description
+                Descriptions = description,
+                CatalogId = 8
             };
 
             return product;
@@ -150,7 +155,8 @@ namespace Centex.Services.Products
             var product = new Product
             {
                 Title = "Warehouse Messanines",
-                Descriptions = description
+                Descriptions = description,
+                CatalogId = 45
             };
 
             return product;

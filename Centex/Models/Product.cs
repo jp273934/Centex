@@ -8,5 +8,6 @@ namespace Centex.Models
         public string ImagePath { get; set; }
         public IEnumerable<string> Descriptions { get; set; }
         public IEnumerable<string> ListDescriptions { get; set; }
+        public int CatalogId { get; set; }
     }
 }

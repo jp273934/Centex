@@ -181,9 +181,12 @@
     <Content Include="Images\Logos\crane.png" />
     <Content Include="Images\Logos\Demag.png" />
     <Content Include="Images\Logos\Gorbel.png" />
+    <Content Include="Images\Logos\gravityconveyor.jpg" />
     <Content Include="Images\Logos\loadingdock.png" />
     <Content Include="Images\Logos\Mallux.png" />
-    <Content Include="Images\Logos\shelving.png" />
+    <Content Include="Images\Logos\Mezzanie .jpeg" />
+    <Content Include="Images\Logos\Pallet Rack Pic.jpg" />
+    <Content Include="Images\Logos\QuantunShelving.jpg" />
     <Content Include="Images\Main_Desc.png" />
     <Content Include="Images\modification.jpg" />
     <Content Include="Images\Pallet.jpg" />

@@ -1,4 +1,5 @@
-﻿@using System.Web.Mvc.Html
+﻿@using System.Net.Http.Formatting
+@using System.Web.Mvc.Html
 
 <!DOCTYPE html>
 
@@ -50,53 +51,56 @@
         p {
             font-size: 1.3em;
         }
+
+        li {
+            font-size: 1.4em;
+            font-family: Copperplate, Copperplate Gothic Light, fantasy;
+            color: yellow;
+        }
+        .navbar .navbar-header,.navbar-collapse {
+    float:none;
+    display:inline-block;
+    vertical-align: top;
+}
+
+@@media (min-width: 768px) {
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+}
     </style>
 </head>
 
 <body style="background-color: #fff;">
 
-<nav class="navbar navbar-default navbar-fixed-top" style="background: url('/Images/Header/HeaderBackground.jpg');">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-      
-       
-           
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><img class="navbar-brand" src="/Images/Header/BuisinessLogo.png" style="height: 9vh;" /></li>
+<div class="row navbar-fixed-top" style="background: url('/Images/Header/HeaderBackground.jpg'); height: 15vh;">
+    <div class="col-sm-2 col-sm-offset-2">
+        <img src="/Images/Header/BuisinessLogo.png" style="height: 17.5vh;"/>
+    </div>
+    <div class="col-sm-5 col-sm-offset-2 text-center">
+        <h1 style="color: #fff; font-family: Copperplate, Copperplate Gothic Light, fantasy; font-weight: bold;">Centext Material Handling</h1>
+        <span style="color: #fff; font-size: 1.5em; font-family: Copperplate, Copperplate Gothic Light, fantasy;">AUSTIN, TEXAS</span><br/>
+        <span style="color: #fff; font-size: 1.5em; font-family: Copperplate, Copperplate Gothic Light, fantasy;">PH: 512-337-8181</span><br/>
+        <span style="color: #fff; font-size: 1.5em; font-family: Copperplate, Copperplate Gothic Light, fantasy;">FAX: 512-646-2661</span>
+    </div>
+</div>
+<div class="row navbar-fixed-top" style="background: url('/Images/Header/HeaderBackground.jpg'); height: 12vh; top: 15vh; z-index: 750;">
 
-                    <li class="visible-md visible-lg">
-                        <img src="~/Images/Header/Demag.png" style="width: 10vw; height: 5vh; margin: 2vh 1vh;"/>
-                    </li>
-                    <li class="visible-md visible-lg">
-                        <img src="~/Images/Header/Gorbel.png" style="width: 10vw; height: 5vh; margin: 2vh 1vh;"/>
-                    </li>
-                    <li class="visible-md visible-lg">
-                        <img src="~/Images/Header/Harrington.png" style="width: 10vw; height: 5vh; margin: 2vh 1vh;"/>
-                    </li>
-                    <li class="visible-md visible-lg">
-                        <img src="~/Images/Header/interlake.png" style="width: 10vw; height: 5vh; margin: 2vh 1vh;"/>
-                    </li>
-                    <li class="visible-md visible-lg">
-                        <img src="~/Images/Header/justrite.png" style="width: 10vw; height: 5vh; margin: 2vh 1vh;" />
-                    </li>
-                    <li class="visible-md visible-lg">
-                        <img src="~/Images/Header/Quantum.png" style="width: 10vw; height: 5vh; margin: 2vh 1vh;"/>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li style="padding-right: 10px;">
-                        <label style="padding-top: 2vh; color: #000;">Phone : 512 - 791 - 3284 </label><br />
-                        <label style="color: #000;">Fax : 512 - 257 - 3388 </label>
-                    </li>
-                </ul>
+    <div class="col-sm-9 col-sm-offset-2">
+        <img src="~/Images/Header/Demag.png" style="width: 10vw; height: 5vh; margin: 2vh 1vh;"/>
+        <img src="~/Images/Header/Gorbel.png" style="width: 10vw; height: 5vh; margin: 2vh 1vh;"/>
+        <img src="~/Images/Header/Harrington.png" style="width: 10vw; height: 5vh; margin: 2vh 1vh;"/>
+        <img src="~/Images/Header/interlake.png" style="width: 10vw; height: 5vh; margin: 2vh 1vh;"/>
+        <img src="~/Images/Header/justrite.png" style="width: 10vw; height: 5vh; margin: 2vh 1vh;"/>
+        <img src="~/Images/Header/Quantum.png" style="width: 10vw; height: 5vh; margin: 2vh 1vh;"/>
 
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-</nav>
-    
-<nav class="navbar navbar-default navbar-fixed-top" style="top: 7vh; z-index: 1000; height: 7.5vh; background-color: #fff; border-bottom: 2px solid #000;">
+    </div>
+</div>
+
+
+<nav class="navbar navbar-default navbar-fixed-top" style="top: 25vh; z-index: 1000; height: 7.5vh; background: url('/Images/Header/HeaderBackground.jpg');">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -112,36 +116,37 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="navbar-collapse collapse navbar-responsive-collapse" id="bs-example-navbar-collapse-2">
 
-            <ul class="nav navbar-nav" style="padding-top: 1.25vh;">
-                <li>@Html.ActionLink("Home", "Index", "Home", null, new {@style = "color:#000;"})</li>
+            <ul class="nav navbar-nav navbar-center" style="margin-top: -1vh;">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: #000;">Services <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li>@Html.ActionLink("Preventive Maintenance", "Service", "Home", new {Id = 0, style = "color:#000" }, null)</li>
-                        <li>@Html.ActionLink("Certified Load Test", "Service", "Home", new { Id = 1 }, null)</li>
-                        <li>@Html.ActionLink("Inspections and Repairs", "Service", "Home", new { Id = 2 }, null)</li>
-                        <li>@Html.ActionLink("Relocation", "Service", "Home", new { Id = 3 }, null)</li>
-                        <li>@Html.ActionLink("Modifications and Upgrades", "Service", "Home", new { Id = 4 }, null)</li>
+                        <li>@Html.ActionLink("Preventive Maintenance", "Service", "Home", new {Id = 0}, null)</li>
+                        <li>@Html.ActionLink("Certified Load Test", "Service", "Home", new {Id = 1}, null)</li>
+                        <li>@Html.ActionLink("Inspections and Repairs", "Service", "Home", new {Id = 2}, null)</li>
+                        <li>@Html.ActionLink("Relocation", "Service", "Home", new {Id = 3}, null)</li>
+                        <li>@Html.ActionLink("Modifications and Upgrades", "Service", "Home", new {Id = 4}, null)</li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: #000;">Popular Products <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Popular Products <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li>@Html.ActionLink("Cranes", "Product", "Home", new { Id = 0 }, null)</li>
-                        <li>@Html.ActionLink("Pallet Racks", "Product", "Home", new { Id = 1 }, null)</li>
-                        <li>@Html.ActionLink("Loading Dock Equipment", "Product", "Home", new { Id = 2 }, null)</li>
-                        <li>@Html.ActionLink("Shelvings", "Product", "Home", new { Id = 3 }, null)</li>
-                        <li>@Html.ActionLink("Conveyors", "Product", "Home", new { Id = 4 }, null)</li>
-                        <li>@Html.ActionLink("Warehouse Mezzanines", "Product", "Home", new { Id = 5 }, null)</li>
+                        <li>@Html.ActionLink("Cranes", "Product", "Home", new {Id = 0}, null)</li>
+                        <li>@Html.ActionLink("Pallet Racks", "Product", "Home", new {Id = 1}, null)</li>
+                        <li>@Html.ActionLink("Loading Dock Equipment", "Product", "Home", new {Id = 2}, null)</li>
+                        <li>@Html.ActionLink("Shelvings", "Product", "Home", new {Id = 3}, null)</li>
+                        <li>@Html.ActionLink("Conveyors", "Product", "Home", new {Id = 4}, null)</li>
+                        <li>@Html.ActionLink("Warehouse Mezzanines", "Product", "Home", new {Id = 5}, null)</li>
                     </ul>
                 </li>
-                <li>@Html.ActionLink("Complete Product Catalog", "Catalog", "Home", null,  new {Id = 48, style = "color:#000" })</li>
-                <li>@Html.ActionLink("Contact Us", "Contact", "Home", null, new { style = "color:#000" })</li>
+                <li>@Html.ActionLink("Complete Product Catalog", "Catalog", "Home", new {Id = 48}, null)</li>
+                <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
             </ul>
-               
+
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
+
 <div class="container-fluid">
     @RenderBody();
 

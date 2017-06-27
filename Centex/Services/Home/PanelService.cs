@@ -22,7 +22,7 @@ namespace Centex.Services.Home
                     Id = 1,
                     Title = "Pallet Rack",
                     Description = "CMH represents the top crane manufactures in the world. Whether you need a Bridge Cranes (1-125 tons) or Workstation Cranes (150-4000lbs), CMH can supply you with the right crane for your application",
-                    ImagePath = "/Images/Logos/PalletRockLogo.png"
+                    ImagePath = "/Images/Logos/Pallet Rack Pic.jpg"
                 },
                 new Panel
                 {
@@ -35,18 +35,18 @@ namespace Centex.Services.Home
                     Id = 3,
                     Title = "Shelving",
                     Description = "Recycling equipment description",
-                    ImagePath = "/Images/Logos/shelving.png"                },
+                    ImagePath = "/Images/Logos/QuantunShelving.jpg"                },
                 new Panel
                 {
                     Id = 4,
                     Title = "Conveyor",
                     Description = "Wire shelvings description",
-                    ImagePath = "/Images/Logos/PalletRockLogo.png"                },
+                    ImagePath = "/Images/Logos/gravityconveyor.jpg"                },
                 new Panel
                 {
                     Id = 5,
                     Title = "Mezzanine",
-                    ImagePath = "/Images/Logos/PalletRockLogo.png"
+                    ImagePath = "/Images/Logos/Mezzanie .jpeg"
                 }
             };
 

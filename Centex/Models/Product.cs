@@ -2,12 +2,13 @@
 
 namespace Centex.Models
 {
-    public class Product
+    public class Product : IItem
     {
-        public string Title { get; set; }
-        public string ImagePath { get; set; }
-        public IEnumerable<string> Descriptions { get; set; }
-        public IEnumerable<string> ListDescriptions { get; set; }
+        public int Id { get; set; }
+        public string Title { get; set; }       
+        public IEnumerable<Photo> Photos { get; set; }
+        public IEnumerable<string> ModalIds { get; set; }
+        public Descriptions Descriptions { get; set; }
         public int CatalogId { get; set; }
     }
 }

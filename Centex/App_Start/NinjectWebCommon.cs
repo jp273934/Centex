@@ -1,3 +1,6 @@
+using Centex.Data;
+using Centex.Models;
+using Centex.Services;
 using Centex.Services.Catalog;
 using Centex.Services.Catalog.Interfaces;
 using Centex.Services.Contact;
@@ -76,6 +79,11 @@ namespace Centex.App_Start
             kernel.Bind<IEmailService>().To<EmailService>();
             kernel.Bind<IPanelService>().To<PanelService>();
             kernel.Bind<ICatalogService>().To<CatalogService>();
+            kernel.Bind<IItemViewService>().To<ItemViewService>();
+            kernel.Bind<IProductsDb>().To<ProductsDb>();
+            kernel.Bind<ISubDescripttionService>().To<SubDescripttionService>();
+            kernel.Bind<IProductDescriptionsService>().To<ProductDescriptionsService>();
+            kernel.Bind<IProductImagesDb>().To<ProductImagesDb>();
         }        
     }
 }

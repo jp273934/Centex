@@ -29,7 +29,7 @@ namespace Centex.Services.Home
                     Id = 2,
                     Title = "Loading Dock Equipment",
                     Description = "CMH supplies and installs a full range of dock equipment. Whether your company requires simple dock bumpers and accessories or a complete in-pit leveler and truck restraint, count on CMH to help you get the right equipment for your needs.",
-                    ImagePath = "/Images/Logos/loadingdock.png"                },
+                    ImagePath = "/Images/Logos/PioneerLeveler.jpg"                },
                 new Panel
                 {
                     Id = 3,

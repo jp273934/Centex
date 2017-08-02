@@ -1,9 +1,8 @@
 ﻿using Centex.Models;
+using Centex.Services;
 using Centex.Services.Catalog.Interfaces;
 using Centex.Services.Contact.Interfaces;
 using Centex.Services.Home.Interfaces;
-using Centex.Services.Products;
-using Centex.Services.Products.Interfaces;
 using Centex.Services.ServiceObjects;
 using Centex.Services.ServiceObjects.Interfaces;
 using System.Web.Mvc;
@@ -15,17 +14,17 @@ namespace Centex.Controllers
     {
         private readonly IHomeViewModelService _homeViewModelService;
         private readonly IService _service;
-        private readonly IProductService _productService;
         private readonly IEmailService _emailService;
         private readonly ICatalogService _catalogService;
+        private readonly IItemViewService _itemViewService;
 
-        public HomeController(IHomeViewModelService homeViewModelService, IService service, IProductService productService, IEmailService emailService, ICatalogService catalogService)
+        public HomeController(IHomeViewModelService homeViewModelService, IService service, IEmailService emailService, ICatalogService catalogService, IItemViewService itemViewService)
         {
             _homeViewModelService = homeViewModelService;
             _service = service;
-            _productService = productService;
             _emailService = emailService;
             _catalogService = catalogService;
+            _itemViewService = itemViewService;
         }
 
         public ActionResult Index()
@@ -40,7 +39,8 @@ namespace Centex.Controllers
 
         public ActionResult Product(int Id)
         {
-            return View(_productService.GetProduct((ProductCategories)Id));
+            var model = _itemViewService.GetViewModel(Categories.ItemType.Product, Id);
+            return View(model);
         }
 
         public ActionResult Catalog(int Id)

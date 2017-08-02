@@ -1,9 +1,10 @@
 ﻿using Centex.Models;
+using Centex.ViewModels;
 
 namespace Centex.Services.Products.Interfaces
 {
     public interface IProductService
     {
-        Product GetProduct(ProductCategories category);
+        ProductViewModel GetProduct(Categories.ProductCategories category);
     }
 }

@@ -18,9 +18,8 @@
 </style>
 <div class="row top">
     <div class="col-xs-12 col-lg-8 col-lg-push-3 col-md-6 col-md-push-6">
-
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12" style="padding-top: 4vh;">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
@@ -127,12 +126,17 @@
         </div>
     </div>
     <div class="col-xs-12 col-lg-2 col-lg-pull-7 col-md-6 col-md-pull-6">
-        <h2>Product Catalog</h2>
+        <span style="font-size: 2em;">Product Catalog</span>
         <div style="max-height: 70vh; overflow-y: auto; overflow-x: hidden;">
-            @foreach (var item in @Model.CatalogItems)
+            <ul class="list-group">
+                @foreach (var item in @Model.CatalogItems)
             {
-                @Html.ActionLink(@item.Name, "Catalog", "Home", new { item.Id, style = "padding-bottom: 1px" }, new { @class = "btn btn-raised btn-default" })
-            }
+                <li class="list-group-item" style="background-color: #000; border-bottom: 2px solid #fff;">
+                    @Html.ActionLink(@item.Name, "Catalog", "Home", new { item.Id, style="color : #fff; line-height : 5vh;" })
+                    </li>
+                }
+            </ul>
+            
 
         </div>
 

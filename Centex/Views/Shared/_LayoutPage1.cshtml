@@ -62,11 +62,21 @@
             font-family: Copperplate, Copperplate Gothic Light, fantasy;
             color: yellow;
         }
-        /*.navbar .navbar-header,.navbar-collapse {
-    float:none;
-    display:inline-block;
-    vertical-align: top;
-}*/
+        
+        .title {
+            color: #fff; 
+            font-family: Copperplate, Copperplate Gothic Light, fantasy; 
+            font-weight: bold; 
+            font-size: 2em;
+            padding-top: 6vh;
+        }
+
+        @@media(max-width: 480px) {
+            .title {
+                text-align: center;
+                padding-top: 2vh;
+            }
+        }
 
 @@media (min-width: 768px) {
   .navbar-nav.navbar-center {
@@ -93,12 +103,12 @@
 }
 .decals {
     background-color: #000;
-    height: 12vh; top: 15vh; 
+    height: 12vh; top: 10vh; 
     z-index: 750;
 }
 
 .navigation {
-    top: 25vh; 
+    top: 17.5vh; 
     z-index: 1000; 
     height: 7.5vh; 
     background-color: #000;
@@ -127,30 +137,29 @@
 <body style="background-color: #fff;">
 
 <div class="row navbar-fixed-top" style="background-color: #000; height: 17.5vh;">
-    <div class="col-xs-2  col-lg-3 col-lg-offset-2">
-        <h1 style="color: #fff; font-family: Copperplate, Copperplate Gothic Light, fantasy; font-weight: bold; padding-top: 1vh;" class="hidden-xs">Centex</h1>
-        <h2 style="color: #fff; font-family: Copperplate, Copperplate Gothic Light, fantasy; font-weight: bold;" class="hidden-xs">Material Handling</h2>
+    <div class="col-xs-12 col-md-7 col-sm-7  col-lg-3 col-lg-offset-3 title">
+        <span style="" >Centex Material Handling</span>
     </div>
-    <div class="col-lg-3">
+    <div class="col-lg-1 visible-lg">
         <img src="/Images/Header/BuisinessLogo.png" style="height: 17.5vh;" />
 
     </div>
-    <div class="col-sm-5 col-lg-2 col-xs-10 text-right" style="padding-top: 2vh;">
+    <div class="col-sm-5 col-md-5 col-lg-2 col-xs-12 text-right hidden-xs" style="padding-top: 4vh;">
         
         <span style="color: #fff; font-size: 1.5em; font-family: Copperplate, Copperplate Gothic Light, fantasy;">AUSTIN, TEXAS</span><br/>
         <span style="color: #fff; font-size: 1.5em; font-family: Copperplate, Copperplate Gothic Light, fantasy;">PH: 512-337-8181</span><br/>
         <span style="color: #fff; font-size: 1.5em; font-family: Copperplate, Copperplate Gothic Light, fantasy;">FAX: 512-646-2661</span>
     </div>
 </div>
-<div class="row navbar-fixed-top decals hidden-xs" >
+<div class="row navbar-fixed-top decals visible-lg" >
 
     <div class="col-sm-9 col-sm-offset-2">
-        <img src="~/Images/Header/Demag.png" style="width: 10vw; height: 10%; padding-right: 1vw;"/>
-        <img src="~/Images/Header/Gorbel.png" style="width: 10vw; padding-top: 4vh; padding-right: 1vw;"/>
-        <img src="~/Images/Header/Harrington.png" style="width: 10vw; height: 6vh; padding-top: 2vh;  padding-right: 1vw;"/>
-        <img src="~/Images/Header/interlake.png" style="width: 10vw; height: 6vh; padding-top: 2vh;  padding-right: 1vw;" />
-        <img src="~/Images/Header/justrite.png" style="width: 10vw; height: 6vh; padding-top: 2vh;  padding-right: 1vw;"/>
-        <img src="~/Images/Header/Quantum.png" style="width: 10vw; height: 6vh; padding-top: 2vh;"/>
+        <img src="~/Images/Header/Demag.png" style="width: 10vw; height: 10%; padding: 2.5vh 1vw;"/>
+        <img src="~/Images/Header/Gorbel.png" style="width: 10vw; padding-top: 1vh; padding-right: 1vw;"/>
+        <img src="~/Images/Header/Harrington.png" style="width: 10vw; height: 6vh; padding-top: 1vh;  padding-right: 1vw;"/>
+        <img src="~/Images/Header/interlake.png" style="width: 10vw; height: 6vh; padding-top: 1vh;  padding-right: 1vw;" />
+        <img src="~/Images/Header/justrite.png" style="width: 10vw; height: 6vh; padding-top: 1vh;  padding-right: 1vw;"/>
+        <img src="~/Images/Header/Quantum.png" style="width: 10vw; height: 6vh; padding-top: 1vh;"/>
 
     </div>
 </div>

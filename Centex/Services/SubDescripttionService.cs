@@ -12,43 +12,79 @@ namespace Centex.Services
             {
                new SubDescriptions
                {
+                   Title = "Cantilever Racking",
                    ParentId = 0,
-                   Descriptions = new List<string> {"It is specificall designed to store long loads such as beams, profiles, pipes and timber. This rack enables loads to be handled by using lifting systems such as lift trucks, mobile cranes, stacker cranes, etc. These systems are chosen depending on the load to be stored (mainly weight and dimensions) or the height of the rack itself.", "The system consists of columns with a vertical beam and one or two horizontal beams at the base to provide stability. A series of arms are attached on which the load is placed. These columns are made of hot-rolled metal beams at variable heights enabling to be fitted. Moreover, its design allows the loads to be fitted on one side of the structure only, or on both sides." },                 
+                   Descriptions = new List<string> {"It is specifically designed to store long loads such as beams, profiles, pipes and timber. This rack enables loads to be handled by using lifting systems such as lift trucks, mobile cranes, stacker cranes, etc. These systems are chosen depending on the load to be stored (mainly weight and dimensions) or the height of the rack itself.", "The system consists of columns with a vertical beam and one or two horizontal beams at the base to provide stability. A series of arms are attached on which the load is placed. These columns are made of hot-rolled metal beams at variable heights enabling to be fitted. Moreover, its design allows the loads to be fitted on one side of the structure only, or on both sides." },    
+                    ListDescriptions = new List<string>
+                    {
+                        "Easy to assemble. The parts are designed to allow the shelves to be assembled quickly and easily.",
+                        "Structure of great simplicity, strength and excellent mobility."
+                    }
                },
                new SubDescriptions
                {
+                   Title = "Clad Rack Warehouses",
                    ParentId = 0,
                    Descriptions = new List<string>
                    {
                        "Major works of engineering in which the racking itself forms part of the construction of the building together with side and roof cladding.The ranking structure supports not only the actual goods and the different building elements but also the thrust of the handling devices and external elements: winds, heavy snowfalls, seismic movements, etc.", "The maximum height of clad-rack buildings is limited by local standards and by the reach height of stacker cranes or fork-lift trucks. This said, warehouses of more than 30m high can by built."
+                   },
+                   ListDescriptions = new List<string>
+                   {
+                       "Storage at high height, enables maximum use of available surface area without wastage of space.",
+                       "Allows a wide range of goods to be stored.",
+                       "Conventional or automated systems can be used."
                    }
                },
                new SubDescriptions
                {
+                   Title = "Conventional Pallet Rack",
                    ParentId = 0,
                    Descriptions = new List<string>
                    {
                        "The most universal system for direct and single access to each pallet. The optimal solutions for those warehouses with palletized products and a wide variety of SKUs.", "The working aisle measurement between each rack and the rack height depends upon the characteristic of the forklift trucks or lifting devices, pallet size and the height of the warehouse itself.", "In order to store a greater number of pallets double-deep racks can be installed enabling one pallet to be stored in front of another on each side of the aisle."
+                   },
+                   ListDescriptions = new List<string>
+                   {
+                       "Total stock control: each storage space is taken up by a single pallet.",
+                       "Maximum adaptability to any load type both in terms of weight and volume.",
+                       "It can be combined with long span beams for manual selection of goods."
                    }
                },
                new SubDescriptions
                {
+                   Title = "Drive In Pallet Rack",
                    ParentId = 0,
                    Descriptions = new List<string>
                    {
                        "This system is base on the storage by accumation principle, which enables the highest use of available space in terms of both area and height. Drive-in racking is designed for the storage of homogenous products. It accommodates a large number of pallets for each SKU.", "Two management systems are available: the drive-in system, with only one access aisle, and the drive-through system, with access to the load from both sides of the rack. The System is frequently use in cold stores (refrigeration and freezing) which require maximum use of space for the storage of producs in a controlled temperature."
+                   },
+                   ListDescriptions = new List<string>
+                   {
+                       "Maximum profitability of the available space (up to 85%).",
+                       "Removal of aisles between the ranking",
+                       "Rigorous control of entries and exits.",
+                       "It allows as many SKU as loading lanes."
                    }
                },
                new SubDescriptions
                {
+                   Title = "Push-Back Pallet Rack",
                    ParentId = 0,
                    Descriptions = new List<string>
                    {
                        "An accumulative storage system that allows up to four pallets deep to be stored per level. All of the pallets of each level, except the top one, are placed on a set of trolleys that are pushed along rolling rails." , "Push-back is ideal for storing medium-turnover products, with two or more pallets per SKU(using the Last In First Out(or LIFO system)."
+                   },
+                   ListDescriptions = new List<string>
+                   {
+                       "The best possible use is made of the space available.",
+                       "Very little height space is waisted",
+                       "Each level can be used to store different SKU"
                    }
                },
                new SubDescriptions
                {
+                   Title = "Single Girder Bridge Crange",
                    ParentId = 1,
                    Descriptions = new List<string>
                    {
@@ -57,6 +93,7 @@ namespace Centex.Services
                },
                new SubDescriptions
                {
+                   Title = "Double Girder Bridge Crange",
                    ParentId = 1,
                    Descriptions = new List<string>
                    {
@@ -65,6 +102,7 @@ namespace Centex.Services
                },
                new SubDescriptions
                {
+                   Title = "Under Running Bridge Crane",
                    ParentId = 1,
                    Descriptions = new List<string>
                    {
@@ -73,6 +111,7 @@ namespace Centex.Services
                },
                new SubDescriptions
                {
+                   Title = "Top Running Bridge Crane",
                    ParentId = 1,
                    Descriptions = new List<string>
                    {
@@ -81,6 +120,7 @@ namespace Centex.Services
                },
                new SubDescriptions
                {
+                   Title = "Gantry Crane",
                    ParentId = 1,
                    Descriptions = new List<string>
                    {
@@ -89,6 +129,7 @@ namespace Centex.Services
                },
                new SubDescriptions
                {
+                   Title = "Jib crane",
                    ParentId = 1,
                    Descriptions = new List<string>
                    {
@@ -97,18 +138,35 @@ namespace Centex.Services
                },
                 new SubDescriptions
                {
+                   Title = "Freestanding Workstation Crane",
                    ParentId = 1,
                    Descriptions = new List<string>
                    {
                        "Free Standing floor supported systems do not put stress on the building's overhead structure. Installation is usually straight forward, and these cranes are also easier to relocate in the future. Free Standing systems require a reinforced concrete floor of at least 6 inches."
+                   },
+                   ListDescriptions = new List<string>
+                   {
+                       "Capacities from 150 to 4000 lbs.",
+                       "Rectangular Coverage with up to 34’ bridge and 124’ runway standard",
+                       "Standard support distances of 20, 25, and 30 feet.",
+                       "Easy to move and position loads",
+                       "Modular design for greater flexibility",
+                       "Doesn't require existing support structure"
                    }
                },
                  new SubDescriptions
                {
+                   Title = "Ceiling Mounted Workstation Crane",
                    ParentId = 1,
                    Descriptions = new List<string>
                    {
                        "With Ceiling Mounted Systems, supporting steel does not interfere with the handling operation. Ceiling Mounted Systems require a building with an adequate overhead structure to hang the crane."
+                   },
+                   ListDescriptions = new List<string>
+                   {
+                       "Capacities from 150 to 4000 lbs. ",
+                       "Rectangular Coverage with up to 34’ bridge and 124’ runway standard",
+                       "Standard support distances of 20, 25, and 30 feet."
                    }
                },
                  new SubDescriptions

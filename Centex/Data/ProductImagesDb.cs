@@ -75,6 +75,11 @@ namespace Centex.Data
                     ParentId = 1,
                     FilePath = RootPath + cranesPath + "Freestanding.png"
                 },
+                      new Photo
+                {
+                    ParentId = 1,
+                    FilePath = RootPath + cranesPath + "CeilingMounted.png"
+                },
             };
         }
 

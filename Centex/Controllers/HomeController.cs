@@ -29,6 +29,7 @@ namespace Centex.Controllers
 
         public ActionResult Index()
         {
+            var model = _homeViewModelService.GetModel();
             return View(_homeViewModelService.GetModel());
         }
 

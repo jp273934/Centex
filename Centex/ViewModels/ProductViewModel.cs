@@ -7,7 +7,9 @@ namespace Centex.ViewModels
     {
         public string Title { get; set; }
         public IEnumerable<Photo> Photos { get; set; }
+        public IEnumerable<string> ListDescriptions { get; set; }
         public Categories.ItemType ProductType { get; set; }
         public Product Product { get; set; }
+        public int CatalogId { get; set; }
     }
 }

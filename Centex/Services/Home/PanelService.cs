@@ -12,14 +12,14 @@ namespace Centex.Services.Home
             {
                 new Panel
                 {
-                    Id = 0,
+                    Id = 1,
                     Title = "Cranes",
                     Description = "CMH specializes in various types of Pallet racks like Cantilever racking, Clad Rack, Conventional, Drive in, Push back racks.",
                     ImagePath = "/Images/Logos/crane.png"
                 },
                 new Panel
                 {
-                    Id = 1,
+                    Id = 0,
                     Title = "Pallet Rack",
                     Description = "CMH represents the top crane manufactures in the world. Whether you need a Bridge Cranes (1-125 tons) or Workstation Cranes (150-4000lbs), CMH can supply you with the right crane for your application",
                     ImagePath = "/Images/Logos/Pallet Rack Pic.jpg"

@@ -132,7 +132,7 @@
                 @foreach (var item in @Model.CatalogItems)
             {
                 <li class="list-group-item" style="background-color: #000; border-bottom: 2px solid #fff;">
-                    @Html.ActionLink(@item.Name, "Catalog", "Home", new { item.Id, style="color : #fff; line-height : 5vh;" })
+                    @Html.ActionLink(@item.Name, "Catalog", "Home", new { item.Id,  }, new { style = "color : #fff; line-height : 5vh;" })
                     </li>
                 }
             </ul>

@@ -293,6 +293,7 @@ namespace Centex.Services
                      new SubDescriptions
                      {
                          ParentId = 4,
+                         Title = "Ball Transfer Table",
                          Descriptions = new List<string>
                          {
                              ""
@@ -301,6 +302,7 @@ namespace Centex.Services
                      new SubDescriptions
                      {
                          ParentId = 4,
+                         Title = "Flexible Gravity Conveyor",
                          Descriptions = new List<string>
                          {
                              ""
@@ -309,6 +311,7 @@ namespace Centex.Services
                      new SubDescriptions
                      {
                          ParentId = 4,
+                         Title = "Gravity Conveyor",
                          Descriptions = new List<string>
                          {
                              ""
@@ -317,6 +320,7 @@ namespace Centex.Services
                      new SubDescriptions
                      {
                          ParentId = 4,
+                         Title = "Live Roller Conveyor",
                          Descriptions = new List<string>
                          {
                              ""
@@ -325,6 +329,7 @@ namespace Centex.Services
                      new SubDescriptions
                      {
                          ParentId = 4,
+                         Title = "Omni Directional Conveyor",
                          Descriptions = new List<string>
                          {
                              ""
@@ -333,6 +338,7 @@ namespace Centex.Services
                      new SubDescriptions
                      {
                          ParentId = 4,
+                         Title = "Pallet Conveyor",
                          Descriptions = new List<string>
                          {
                              ""
@@ -341,6 +347,7 @@ namespace Centex.Services
                      new SubDescriptions
                      {
                          ParentId = 4,
+                         Title = "Roller Bed Conveyor",
                          Descriptions = new List<string>
                          {
                              ""
@@ -349,6 +356,7 @@ namespace Centex.Services
                      new SubDescriptions
                      {
                          ParentId = 4,
+                         Title = "Slider Bed Conveyor",
                          Descriptions = new List<string>
                          {
                              ""
@@ -357,6 +365,7 @@ namespace Centex.Services
                      new SubDescriptions
                      {
                          ParentId = 4,
+                         Title = "Wire Mesh Belt Conveyor",
                          Descriptions = new List<string>
                          {
                              ""

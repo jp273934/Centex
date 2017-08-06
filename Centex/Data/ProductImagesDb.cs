@@ -13,6 +13,7 @@ namespace Centex.Data
             const string cranesPath = "Cranes/";
             const string palletRacksPath = "PalletRacks/";
             const string shelvingsPath = "Shelvings/";
+            const string converyorPath = "Conveyors/";
 
             return new List<Photo>
             {
@@ -125,6 +126,51 @@ namespace Centex.Data
                 {
                     ParentId = 3,
                     FilePath = RootPath + shelvingsPath + "Wire Shelving.jpg"
+                },
+                  new Photo
+                {
+                    ParentId = 4,
+                    FilePath = RootPath + converyorPath + "Ball Transfer Table.jpg"
+                },
+                 new Photo
+                {
+                    ParentId = 4,
+                    FilePath = RootPath + converyorPath + "Flexible Gravity Conveyor.jpg"
+                },
+                 new Photo
+                {
+                    ParentId = 4,
+                    FilePath = RootPath + converyorPath + "Gravity Conveyor (1).jpg"
+                },
+                new Photo
+                {
+                    ParentId = 4,
+                    FilePath = RootPath + converyorPath + "Live Roller Conveyor.jpg"
+                },
+                new Photo
+                {
+                    ParentId = 4,
+                    FilePath = RootPath + converyorPath + "Omni Directional Conveyor.jpg"
+                },
+                new Photo
+                {
+                    ParentId = 4,
+                    FilePath = RootPath + converyorPath + "Pallet Conveyor.jpg"
+                },
+                new Photo
+                {
+                    ParentId = 4,
+                    FilePath = RootPath + converyorPath + "Roller Bed Conveyor.jpg"
+                },
+                new Photo
+                {
+                    ParentId = 4,
+                    FilePath = RootPath + converyorPath + "Slider Bed Conveyor.jpg"
+                },
+                new Photo
+                {
+                    ParentId = 4,
+                    FilePath = RootPath + converyorPath + "Wire Mesh Belt Conveyor.png"
                 },
             };
         }

@@ -191,6 +191,15 @@
     <Content Include="Images\modification.jpg" />
     <Content Include="Images\Pallet.jpg" />
     <Content Include="Images\Logos\PalletRockLogo.png" />
+    <Content Include="Images\Products\Conveyors\Ball Transfer Table.jpg" />
+    <Content Include="Images\Products\Conveyors\Flexible Gravity Conveyor.jpg" />
+    <Content Include="Images\Products\Conveyors\Gravity Conveyor %281%29.jpg" />
+    <Content Include="Images\Products\Conveyors\Live Roller Conveyor.jpg" />
+    <Content Include="Images\Products\Conveyors\Omni Directional Conveyor.jpg" />
+    <Content Include="Images\Products\Conveyors\Pallet Conveyor.jpg" />
+    <Content Include="Images\Products\Conveyors\Roller Bed Conveyor.jpg" />
+    <Content Include="Images\Products\Conveyors\Slider Bed Conveyor.jpg" />
+    <Content Include="Images\Products\Conveyors\Wire Mesh Belt Conveyor.png" />
     <Content Include="Images\Products\Cranes\CeilingMounted.png" />
     <Content Include="Images\Products\Cranes\DoubleGirder.jpg" />
     <Content Include="Images\Products\Cranes\Freestanding.png" />

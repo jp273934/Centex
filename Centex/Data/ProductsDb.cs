@@ -49,6 +49,7 @@ namespace Centex.Data
                        MainDescriptions = _productDescriptionsService.GetDescriptionsById(2),
                        SubDescriptions = _subDescripttionService.GetSubDescriptionsByParentId(2)
                     },
+                    Photos = _productImagesDb.GetPhotosByParentId(2),
                     ModalIds = new List<string> {"firstModal", "secondModal", "thirdModal", "fourthModal", "fifthModal" }
                 },
                 new Product

@@ -14,6 +14,7 @@ namespace Centex.Data
             const string palletRacksPath = "PalletRacks/";
             const string shelvingsPath = "Shelvings/";
             const string converyorPath = "Conveyors/";
+            const string dockPath = "DockEquipment/";
 
             return new List<Photo>
             {
@@ -81,6 +82,31 @@ namespace Centex.Data
                 {
                     ParentId = 1,
                     FilePath = RootPath + cranesPath + "CeilingMounted.png"
+                },
+                new Photo
+                {
+                    ParentId = 2,
+                    FilePath = RootPath + dockPath + "DockEquipment1.jpg"
+                },
+                new Photo
+                {
+                    ParentId = 2,
+                    FilePath = RootPath + dockPath + "DockEquipment2.jpg"
+                },
+                 new Photo
+                {
+                    ParentId = 2,
+                    FilePath = RootPath + dockPath + "DockEquipment3.jpg"
+                },
+                 new Photo
+                {
+                    ParentId = 2,
+                    FilePath = RootPath + dockPath + "DockEquipment4.jpg"
+                },
+                new Photo
+                {
+                    ParentId = 2,
+                    FilePath = RootPath + dockPath + "DockEquipment5.jpg"
                 },
                   new Photo
                 {

@@ -175,7 +175,8 @@ namespace Centex.Services
                    Descriptions = new List<string>
                    {
                        ""
-                   }
+                   },
+                   Title = "Dock Equipment"
                },
                   new SubDescriptions
                {
@@ -183,7 +184,8 @@ namespace Centex.Services
                    Descriptions = new List<string>
                    {
                        ""
-                   }
+                   },
+                   Title = "Dock Equipment"
                },
                    new SubDescriptions
                {
@@ -191,7 +193,8 @@ namespace Centex.Services
                    Descriptions = new List<string>
                    {
                        ""
-                   }
+                   },
+                   Title = "Dock Equipment"
                },
                     new SubDescriptions
                {
@@ -199,7 +202,8 @@ namespace Centex.Services
                    Descriptions = new List<string>
                    {
                        ""
-                   }
+                   },
+                   Title = "Dock Equipment"
                },
                      new SubDescriptions
                {
@@ -207,7 +211,8 @@ namespace Centex.Services
                    Descriptions = new List<string>
                    {
                        ""
-                   }
+                   },
+                   Title = "Dock Equipment"
                },
                         new SubDescriptions
                {

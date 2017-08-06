@@ -212,6 +212,7 @@ namespace Centex.Services
                         new SubDescriptions
                {
                    ParentId = 3,
+                   Title = "Archive Shelving",
                    Descriptions = new List<string>
                    {
                        ""
@@ -220,6 +221,7 @@ namespace Centex.Services
                   new SubDescriptions
                {
                    ParentId = 3,
+                   Title = "Automotive Shelving",
                    Descriptions = new List<string>
                    {
                        ""
@@ -228,6 +230,7 @@ namespace Centex.Services
                    new SubDescriptions
                {
                    ParentId = 3,
+                   Title = "Boltless PB Shelving",
                    Descriptions = new List<string>
                    {
                        ""
@@ -236,6 +239,7 @@ namespace Centex.Services
                     new SubDescriptions
                {
                    ParentId = 3,
+                   Title = "Clip Shelving",
                    Descriptions = new List<string>
                    {
                        ""
@@ -244,6 +248,43 @@ namespace Centex.Services
                      new SubDescriptions
                {
                    ParentId = 3,
+                   Title = "Hallowell Shelving",
+                   Descriptions = new List<string>
+                   {
+                       ""
+                   }
+               },
+                     new SubDescriptions
+               {
+                   ParentId = 3,
+                   Title = "Rivet Shelving",
+                   Descriptions = new List<string>
+                   {
+                       ""
+                   }
+               },
+                      new SubDescriptions
+               {
+                   ParentId = 3,
+                   Title = "Tire Storage Shelving",
+                   Descriptions = new List<string>
+                   {
+                       ""
+                   }
+               },
+                new SubDescriptions
+               {
+                   ParentId = 3,
+                   Title = "Widespan Shelving",
+                   Descriptions = new List<string>
+                   {
+                       ""
+                   }
+               },
+                new SubDescriptions
+               {
+                   ParentId = 3,
+                   Title = "Wire Shelving",
                    Descriptions = new List<string>
                    {
                        ""

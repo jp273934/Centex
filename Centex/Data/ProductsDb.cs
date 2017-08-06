@@ -58,7 +58,8 @@ namespace Centex.Data
                        MainDescriptions = _productDescriptionsService.GetDescriptionsById(3),
                        SubDescriptions = _subDescripttionService.GetSubDescriptionsByParentId(3)
                     },
-                    ModalIds = new List<string> {"firstModal", "secondModal", "thirdModal", "fourthModal", "fifthModal" }
+                    Photos = _productImagesDb.GetPhotosByParentId(3),
+                    ModalIds = new List<string> {"ArchiveShelvingModal", "AutomotiveShelvingModal", "BoltlessPBShelvingModal", "ClipShelvingModal", "HallowellShelvingModal", "RivetShelvingModal", "TireStorageShelvingModal", "WidespanShelvingModal", "WireShelvingModal" }
                 },
                 new Product
                 {

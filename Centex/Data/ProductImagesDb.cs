@@ -12,6 +12,7 @@ namespace Centex.Data
         {
             const string cranesPath = "Cranes/";
             const string palletRacksPath = "PalletRacks/";
+            const string shelvingsPath = "Shelvings/";
 
             return new List<Photo>
             {
@@ -79,6 +80,51 @@ namespace Centex.Data
                 {
                     ParentId = 1,
                     FilePath = RootPath + cranesPath + "CeilingMounted.png"
+                },
+                  new Photo
+                {
+                    ParentId = 3,
+                    FilePath = RootPath + shelvingsPath + "Archive Shelving.jpg"
+                },
+                 new Photo
+                {
+                    ParentId = 3,
+                    FilePath = RootPath + shelvingsPath + "Automotive Shelving.jpg"
+                },
+                  new Photo
+                {
+                    ParentId = 3,
+                    FilePath = RootPath + shelvingsPath + "Boltless PB Shelving.jpg"
+                },
+                new Photo
+                {
+                    ParentId = 3,
+                    FilePath = RootPath + shelvingsPath + "Clip Shelving.jpg"
+                },
+                new Photo
+                {
+                    ParentId = 3,
+                    FilePath = RootPath + shelvingsPath + "Hallowell-Shelving.png"
+                },
+                new Photo
+                {
+                    ParentId = 3,
+                    FilePath = RootPath + shelvingsPath + "Rivet-Shelving.jpg"
+                },
+                new Photo
+                {
+                    ParentId = 3,
+                    FilePath = RootPath + shelvingsPath + "Tire Storage Shelving.jpg"
+                },
+                new Photo
+                {
+                    ParentId = 3,
+                    FilePath = RootPath + shelvingsPath + "Widespan shelving.jpg"
+                },
+                 new Photo
+                {
+                    ParentId = 3,
+                    FilePath = RootPath + shelvingsPath + "Wire Shelving.jpg"
                 },
             };
         }

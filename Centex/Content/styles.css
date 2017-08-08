@@ -1,0 +1,98 @@
+﻿
+.form-group {
+    margin-top: 2px;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+
+.navbar-nav li {
+    font-size: 1.25em;
+    font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    color: yellow;
+}
+
+.title {
+    color: #fff;
+    font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    font-weight: bold;
+    font-size: 2em;
+    padding-top: 6vh;
+}
+
+
+#decals {
+    background-color: #000;
+    height: 12vh;
+    top: 17.5vh;
+    z-index: 750;
+}
+
+#navigation {
+    top: 27.5vh;
+    z-index: 1000;
+    height: 7.5vh;
+    background-color: #000;
+    border-top: 1px solid #fff;
+}
+
+
+@media (min-width: 768px) {
+    .navbar-nav.navbar-center {
+        position: absolute;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+}
+
+@media (max-width: 1500px) {
+    .navbar-nav.navbar-center {
+        position: absolute;
+        left: 12.5%;
+        transform: translatex(12.5%);
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar-nav.navbar-center {
+        position: absolute;
+        left: 0%;
+        transform: translatex(0%);
+    }
+
+    #navigation {
+        top: 1vh;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    #navigation {
+        top: 17.5vh;
+    }
+
+    .navbar-nav li {
+        color: #000;
+        background-color: #fff;
+    }
+
+   .row .top {
+        padding-top: 35vh;
+    }
+
+    .title {
+        text-align: center;
+        padding-top: 2vh;
+    }
+
+    #decals {
+        display: none;
+    }
+}
+
+.top {
+    padding-top: 40vh;
+}

@@ -31,33 +31,24 @@
                 }
             </div>
             <div class="col-xs-12 col-lg-5 col-md-6">
-                <div class="panel panel-default" style="border: none;">
-                    <div class="panel-body">
-                        <h2>@Model.Title</h2>
-                        @foreach (var item in @Model.Product.Descriptions.MainDescriptions)
-                        {
-                            <p>@item</p>
-                        }
-                        
-                        @if (Model.ListDescriptions != null && Model.ListDescriptions.Any())
-                        {
-                            <ul>
-                                @foreach (var item in Model.ListDescriptions)
+                <h2>@Model.Title</h2>
+                @foreach (var item in @Model.Product.Descriptions.MainDescriptions)
                 {
-                                    <li style="font-size: 1.25em;">@item</li>
-                                }
-                            </ul>
-                        }
-                    </div>
-                </div>
+                    <p>@item</p>
+                }
 
+                @if (Model.ListDescriptions != null && Model.ListDescriptions.Any())
+                {
+                    <ul>
+                        @foreach (var item in Model.ListDescriptions)
+                {
+                            <li style="font-size: 1.25em;">@item</li>
+                        }
+                    </ul>
+                }
             </div>
             <div class="col-xs-12 col-lg-3 col-md-3">
-                <div class="panel panel-default" style="border: none;">
-                    <div class="panel-body">
-                        @Html.Partial("ContactPanel")
-                    </div>
-                </div>
+                @Html.Partial("ContactPanel")
             </div>
         </div>
     </div>
@@ -79,7 +70,7 @@
                             {
                                 <p>@item</p>
                             }
-                            
+
                             <ul>
                                 @if (@Model.Product.Descriptions.SubDescriptions.ToList()[i].ListDescriptions != null && @Model.Product.Descriptions.SubDescriptions.ToList()[i].ListDescriptions.Any())
                                 {
@@ -88,9 +79,9 @@
                                         <li style="font-size: 1.25em;">@item</li>
                                     }
                                 }
-                               
+
                             </ul>
-                           
+
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

@@ -1,7 +1,7 @@
 ﻿@model Centex.Models.Panel
 <div class="col-lg-2">
     <a href='@Url.Action("Product", "Home", new {Model.Id})' class="img-responsive img-circle" style="width: 10vh; margin: auto; background: url(' + @Model.ImagePath +');">
-        <img src="@Model.ImagePath" class="img-responsive img-circle" style="height: 12vh; margin: auto;" />
+        <img src="@Model.ImagePath" class="img-responsive img-circle" style="height: 12vh; margin: auto;" alt="@Model.ImageDescription"/>
     </a>
     <div style="text-align: center;">
         <h4 style="font-weight: bold;">@Model.Title</h4>

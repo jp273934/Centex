@@ -26,7 +26,7 @@
                 {
                     for (var i = 0; i < Model.Product.Photos.Count(); i++)
                     {
-                        <a href="#" data-toggle="modal" data-target="#@Model.Product.ModalIds.ToArray()[i]"><img src="@Model.Product.Photos.ToList()[i].FilePath" class="photo" /></a><br /><br />
+                        <a href="#" data-toggle="modal" data-target="#@Model.Product.ModalIds.ToArray()[i]"><img src="@Model.Product.Photos.ToList()[i].FilePath" alt="@Model.Product.Photos.ToList()[i].ImageDescription" class="photo" /></a><br /><br />
                     }
                 }
             </div>

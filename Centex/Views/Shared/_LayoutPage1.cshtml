@@ -43,25 +43,16 @@
 
     </script>
     <title>Centex Material Handling</title>
-    <style>
-        
-
-   
-
-    </style>
+    
 </head>
 
 <body style="background-color: #fff;">
 
-<div class="row navbar-fixed-top" style="background-color: #000; height: 17.5vh;">
-    <div class="col-xs-12 col-md-7 col-sm-7  col-lg-3 col-lg-offset-3 title">
+<div class="row navbar-fixed-top" style="background-color: #000;">
+    <div class="col-xs-12 col-md-7 col-sm-7  col-lg-3 col-lg-offset-3" style="display: none;">
         <span style="" >Centex Material Handling</span>
     </div>
-    <div class="col-lg-1 visible-lg">
-        <img src="/Images/Header/BuisinessLogo.png" style="height: 17.5vh;" />
-
-    </div>
-    <div class="col-sm-5 col-md-5 col-lg-2 col-xs-12 text-right hidden-xs" style="padding-top: 4vh;">
+    <div class="col-sm-5 col-md-5 col-lg-2 col-xs-12" style="display: none;">
         <address>
             <span style="color: #fff; font-size: 1.5em; font-family: Copperplate, Copperplate Gothic Light, fantasy;">AUSTIN, TEXAS</span><br />
         </address>
@@ -69,20 +60,10 @@
         <span style="color: #fff; font-size: 1.5em; font-family: Copperplate, Copperplate Gothic Light, fantasy;">PH: 512-337-8181</span><br/>
         <span style="color: #fff; font-size: 1.5em; font-family: Copperplate, Copperplate Gothic Light, fantasy;">FAX: 512-646-2661</span>
     </div>
-</div>
-<div class="row navbar-fixed-top" id="decals">
-
-    <div class="col-sm-9 col-sm-offset-2">
-        <img src="~/Images/Header/Demag.png" style="width: 10vw; height: 10%; padding: 2.5vh 1vw;" alt="Image of demag logo"/>
-        <img src="~/Images/Header/Gorbel.png" style="width: 10vw; padding-top: 1vh; padding-right: 1vw;" alt="Image of gorbel logo"/>
-        <img src="~/Images/Header/Harrington.png" style="width: 10vw; height: 6vh; padding-top: 1vh;  padding-right: 1vw;" alt="Image of harrington logo"/>
-        <img src="~/Images/Header/interlake.png" style="width: 10vw; height: 6vh; padding-top: 1vh;  padding-right: 1vw;" alt="Image of interlake logo"/>
-        <img src="~/Images/Header/justrite.png" style="width: 10vw; height: 6vh; padding-top: 1vh;  padding-right: 1vw;" alt="Image of justrite logo"/>
-        <img src="~/Images/Header/Quantum.png" style="width: 10vw; height: 6vh; padding-top: 1vh;" alt="Image of quantum logo"/>
-
+    <div class="col-sm-12 text-center">
+        <img src="~/Images/Header/CentexHeaderOrange.png" class="header"/>
     </div>
 </div>
-
 
 <nav class="navbar navbar-default navbar-fixed-top" id="navigation">
     <div class="container-fluid">
@@ -104,7 +85,7 @@
                 <li>@Html.ActionLink("Home", "Index", "Home")</li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" style="background-color: #000;">
                         <li>@Html.ActionLink("Preventive Maintenance", "Service", "Home", new {Id = 0}, null)</li>
                         <li>@Html.ActionLink("Certified Load Test", "Service", "Home", new {Id = 1}, null)</li>
                         <li>@Html.ActionLink("Inspections and Repairs", "Service", "Home", new {Id = 2}, null)</li>
@@ -114,7 +95,7 @@
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Popular Products <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" style="background-color: #000;">
                         <li>@Html.ActionLink("Cranes", "Product", "Home", new {Id = 1}, null)</li>
                         <li>@Html.ActionLink("Pallet Racks", "Product", "Home", new {Id = 0}, null)</li>
                         <li>@Html.ActionLink("Loading Dock Equipment", "Product", "Home", new {Id = 2}, null)</li>
@@ -134,9 +115,6 @@
 <div class="container-fluid">
     @RenderBody();
 
-</div>
-    
-@*<script src="~/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>*@
-    
+</div>   
 </body>
 </html>

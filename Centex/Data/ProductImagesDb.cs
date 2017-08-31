@@ -149,25 +149,7 @@ namespace Centex.Data
                     ParentId = 3,
                     FilePath = RootPath + shelvingsPath + "Clip Shelving.jpg",
                     ImageDescription = "Image of clip shelving"
-                },
-                new Photo
-                {
-                    ParentId = 3,
-                    FilePath = RootPath + shelvingsPath + "Hallowell-Shelving.png",
-                    ImageDescription = "Image of hallowell shelving"
-                },
-                new Photo
-                {
-                    ParentId = 3,
-                    FilePath = RootPath + shelvingsPath + "Rivet-Shelving.jpg",
-                    ImageDescription = "Image of rivet shelving"
-                },
-                new Photo
-                {
-                    ParentId = 3,
-                    FilePath = RootPath + shelvingsPath + "Tire Storage Shelving.jpg",
-                    ImageDescription = "Image of tire storage shelving"
-                },
+                },                                              
                 new Photo
                 {
                     ParentId = 3,

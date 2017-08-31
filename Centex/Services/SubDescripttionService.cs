@@ -220,7 +220,8 @@ namespace Centex.Services
                    Title = "Archive Shelving",
                    Descriptions = new List<string>
                    {
-                       ""
+                       "Designed for the hand-loading of intermediate weight bulky items, this versatile rack system can be used in hundreds of storage applications.",
+                       "In addition to storing carton merchandise in shipping and receiving departments, it can also be used for display racking in furniture and department stores, for storage of medical and dietary supplies in hospitals and more."
                    }
                },
                   new SubDescriptions
@@ -229,7 +230,7 @@ namespace Centex.Services
                    Title = "Automotive Shelving",
                    Descriptions = new List<string>
                    {
-                       ""
+                       "Automotive shelving provides a highly versatile system for efficiently storing automobile parts and accessories including tires."
                    }
                },
                    new SubDescriptions
@@ -238,7 +239,7 @@ namespace Centex.Services
                    Title = "Boltless PB Shelving",
                    Descriptions = new List<string>
                    {
-                       ""
+                       "Boltless systems maximize existing square footage economically – all shelving can be disassembled with ease, transported, and recombined to create extra storage where needed. Installation costs are 30-40% lower than bolted shelving because rapid assembly requires much less time."
                    }
                },
                     new SubDescriptions
@@ -247,43 +248,17 @@ namespace Centex.Services
                    Title = "Clip Shelving",
                    Descriptions = new List<string>
                    {
-                       ""
+                       "Clip Shelving is the universal answer, solving any basic storage problem with ease. Open design ensures easy stocking and retrieval. Compression clip provides bolt-free assembly; also makes shelf adjustments quick and easy. Sway braces on rear and sides provides ultimate stability. Ideal for bulky or packaged items. Shelves are adjustable in 1 1/2” increments."
                    }
                },
-                     new SubDescriptions
-               {
-                   ParentId = 3,
-                   Title = "Hallowell Shelving",
-                   Descriptions = new List<string>
-                   {
-                       ""
-                   }
-               },
-                     new SubDescriptions
-               {
-                   ParentId = 3,
-                   Title = "Rivet Shelving",
-                   Descriptions = new List<string>
-                   {
-                       ""
-                   }
-               },
-                      new SubDescriptions
-               {
-                   ParentId = 3,
-                   Title = "Tire Storage Shelving",
-                   Descriptions = new List<string>
-                   {
-                       ""
-                   }
-               },
+                                                         
                 new SubDescriptions
                {
                    ParentId = 3,
                    Title = "Widespan Shelving",
                    Descriptions = new List<string>
                    {
-                       ""
+                       "Wide Span Shelving is designed for the hand-loading of medium to heavy loads and is ideal for storing small quantities of a large variety of product types. Available with an assortment of accessories and components, Wide Span Shelving can be adapted to meet a variety of hand-stack storage requirements. It can even be paired with stairs and catwalks to create multiple levels of storage, maximizing the height of your warehouse."
                    }
                },
                 new SubDescriptions
@@ -292,7 +267,8 @@ namespace Centex.Services
                    Title = "Wire Shelving",
                    Descriptions = new List<string>
                    {
-                       ""
+                       "The ever popular chrome wire shelving system is perfect for any dry storage application. Chrome wire shelving is by far the most popular wire shelving style we offer due to its simple assembly without tools!",
+                       "Wire shelving has become one of the most popular storage systems available to consumers and Industrial users alike. With storage capacities of 600-800 LBS per shelf, wire shelving can help organize any storage area."
                    }
                },
                      new SubDescriptions

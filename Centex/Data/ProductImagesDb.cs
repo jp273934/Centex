@@ -99,26 +99,26 @@ namespace Centex.Data
                 new Photo
                 {
                     ParentId = 2,
-                    FilePath = RootPath + dockPath + "DockEquipment1.jpg",
-                    ImageDescription = "Image of dock lever equipment"
+                    FilePath = RootPath + dockPath + "DockEquipment4.jpg",
+                    ImageDescription = "Image of hydraulic dock leveler"
                 },
                 new Photo
                 {
                     ParentId = 2,
-                    FilePath = RootPath + dockPath + "DockEquipment2.jpg",
-                    ImageDescription = "Image of dock lever equipment"
+                    FilePath = RootPath + dockPath + "MechanicalDock.jpg",
+                    ImageDescription = "Image of mechanical dock leveler"
                 },
                  new Photo
                 {
                     ParentId = 2,
                     FilePath = RootPath + dockPath + "DockEquipment3.jpg",
-                    ImageDescription = "Image of dock lever equipment"
+                    ImageDescription = "Image of edge of dock levelers"
                 },
                  new Photo
                 {
                     ParentId = 2,
-                    FilePath = RootPath + dockPath + "DockEquipment4.jpg",
-                    ImageDescription = "Image of dock lever equipment"
+                    FilePath = RootPath + dockPath + "DockEquipment2.jpg",
+                    ImageDescription = "Image of vehicle restraint"
                 },
                 new Photo
                 {

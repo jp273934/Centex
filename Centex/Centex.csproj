@@ -170,6 +170,7 @@
     <Content Include="Images\Carousel\pallet rack installation picture.jpg" />
     <Content Include="Images\Carousel\Workstation Bench with locking drawers lights electrical.JPG" />
     <Content Include="Images\Header\CentexHeaderOrange.png" />
+    <Content Include="Images\Header\CentexHeaderOrange.svg" />
     <Content Include="Images\Header\Demag.png" />
     <Content Include="Images\Header\Gorbel.png" />
     <Content Include="Images\Header\Harrington.png" />
@@ -209,11 +210,11 @@
     <Content Include="Images\Products\Cranes\SingleGirder.png" />
     <Content Include="Images\Products\Cranes\TopRunningBridge.jpg" />
     <Content Include="Images\Products\Cranes\UnderRunningBridge.png" />
-    <Content Include="Images\Products\DockEquipment\DockEquipment1.jpg" />
     <Content Include="Images\Products\DockEquipment\DockEquipment2.jpg" />
     <Content Include="Images\Products\DockEquipment\DockEquipment3.jpg" />
     <Content Include="Images\Products\DockEquipment\DockEquipment4.jpg" />
     <Content Include="Images\Products\DockEquipment\DockEquipment5.jpg" />
+    <Content Include="Images\Products\DockEquipment\MechanicalDock.jpg" />
     <Content Include="Images\Products\PalletRacks\1_thumb.jpg" />
     <Content Include="Images\Products\PalletRacks\2_thumb.jpg" />
     <Content Include="Images\Products\PalletRacks\3_thumb.jpg" />

@@ -174,45 +174,45 @@ namespace Centex.Services
                    ParentId = 2,
                    Descriptions = new List<string>
                    {
-                       ""
+                       "Adjustable hydraulic dock levelers are a great option for many loading dock areas. These levelers are built for durability even under heavy traffic conditions. There are a number of different options available, check out the push button models that make hydraulic levelers simple."
                    },
-                   Title = "Dock Equipment"
+                   Title = "Hydraulic Dock Levelers"
                },
                   new SubDescriptions
                {
                    ParentId = 2,
                    Descriptions = new List<string>
                    {
-                       ""
+                       "A mechanical dock level has a simple chain operation. These levelers are ideal when you need a budget-friendly leveler that will provide years of great service. A mechanical leveler works under nearly any condition, even in hot or cold weather."
                    },
-                   Title = "Dock Equipment"
+                   Title = "Mechanical Dock Levelers"
                },
                    new SubDescriptions
                {
                    ParentId = 2,
                    Descriptions = new List<string>
                    {
-                       ""
+                       "This style of leveler is the industry standard in surface-mounted dock leveler. The up-front cost of these levelers is low, but you don’t sacrifice quality. One of the “Top-of Dock”, hydraulic or mechanical edge-of-dock levelers will last you for years and stand up to heavy use."
                    },
-                   Title = "Dock Equipment"
+                   Title = "Edge of Dock Levelers"
                },
                     new SubDescriptions
                {
                    ParentId = 2,
                    Descriptions = new List<string>
                    {
-                       ""
+                       "A foam dock seal with fixed head pad over side pads provides the tightest possible seal between interior & exterior environments for high volume traffic with consistent trailer widths & heights. This three sided seal is still the leading cost effective means to seal a dock door opening."
                    },
-                   Title = "Dock Equipment"
+                   Title = "Dock Seal"
                },
                      new SubDescriptions
                {
                    ParentId = 2,
                    Descriptions = new List<string>
                    {
-                       ""
+                       "Vehicle restraints and dock lock safety systems are a key component of efficent and safe modern loading docks. Vehicle restraints lock trailers into position at the loading dock. The vehicle restraint systems incorporate an intergrated system of signal lights, inside on the vehicle restraint control panel and outside on the facility wall to communicate loading and restraint status to the dock attendant as well as the truck driver."
                    },
-                   Title = "Dock Equipment"
+                   Title = "Vehicle Restraint"
                },
                         new SubDescriptions
                {

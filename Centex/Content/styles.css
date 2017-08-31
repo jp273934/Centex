@@ -17,15 +17,15 @@ p {
 
 
 #navigation {
-    top: 18.1vh;
+    top: 14vh;
     z-index: 1000;
     height: 7.5vh;
     background-color: #000;   
 }
 
 .header {
-    height: 18vh;
-    width: 95vh;
+    height: 10em;
+    width: 110em;
 }
 @media (min-width: 768px) {
     .navbar-nav.navbar-center {
@@ -50,6 +50,10 @@ p {
         transform: translatex(0%);
     }
 
+    #navigation {
+        top: 11.5vh;
+    }
+
     .header {
         width: 97.55vw
     }
@@ -68,6 +72,10 @@ p {
    .row .top {
         padding-top: 35vh;
     }
+
+  .header {
+      height: 5em;
+  }
 }
 
 .top {

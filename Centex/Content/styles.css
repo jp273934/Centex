@@ -17,10 +17,11 @@ p {
 
 
 #navigation {
-    top: 14vh;
-    z-index: 1000;
-    height: 7.5vh;
+    /*top: 14vh;
+    z-index: 1000;*/
+    height: 80px;
     background-color: #000;   
+    margin-top: 157px;
 }
 
 .header {

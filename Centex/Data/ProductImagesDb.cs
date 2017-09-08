@@ -15,6 +15,7 @@ namespace Centex.Data
             const string shelvingsPath = "Shelvings/";
             const string converyorPath = "Conveyors/";
             const string dockPath = "DockEquipment/";
+            const string mezzaninePath = "Mezzanines/";
 
             return new List<Photo>
             {
@@ -215,6 +216,18 @@ namespace Centex.Data
                     ParentId = 4,
                     FilePath = RootPath + converyorPath + "Wire Mesh Belt Conveyor.png",
                     ImageDescription = "Image of wire mesh belt conveyor"
+                },
+                new Photo
+                {
+                    ParentId = 5,
+                    FilePath = RootPath + mezzaninePath + "image003.jpg",
+                    ImageDescription = "Image of a mezzanine"
+                },
+                new Photo
+                {
+                    ParentId = 5,
+                    FilePath = RootPath + mezzaninePath + "image004.jpg",
+                    ImageDescription = "Image of a mezzanine"
                 },
             };
         }

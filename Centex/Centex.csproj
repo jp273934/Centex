@@ -215,6 +215,8 @@
     <Content Include="Images\Products\DockEquipment\DockEquipment4.jpg" />
     <Content Include="Images\Products\DockEquipment\DockEquipment5.jpg" />
     <Content Include="Images\Products\DockEquipment\MechanicalDock.jpg" />
+    <Content Include="Images\Products\Mezzanines\image003.jpg" />
+    <Content Include="Images\Products\Mezzanines\image004.jpg" />
     <Content Include="Images\Products\PalletRacks\1_thumb.jpg" />
     <Content Include="Images\Products\PalletRacks\2_thumb.jpg" />
     <Content Include="Images\Products\PalletRacks\3_thumb.jpg" />

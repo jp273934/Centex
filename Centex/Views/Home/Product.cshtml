@@ -66,6 +66,7 @@
                             <h4 style="font-weight: bold;" class="modal-title">@Model.Product.Descriptions.SubDescriptions.ToList()[i].Title</h4>
                         </div>
                         <div class="modal-body">
+<img src="@Model.Product.Photos.ToList()[i].FilePath" alt="@Model.Product.Photos.ToList()[i].ImageDescription" class="photo"  style="float: left; padding-right: 5px;"/>
                             @foreach (var item in @Model.Product.Descriptions.SubDescriptions.ToList()[i].Descriptions)
                             {
                                 <p>@item</p>

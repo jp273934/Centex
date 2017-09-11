@@ -10,15 +10,12 @@ p {
 
 .navbar-nav li {
     font-size: 1.25em;
-    /*font-family: Copperplate, Copperplate Gothic Light, fantasy;*/
     color: #ff6600;
     font-family: 'Alegreya SC', serif;
 }
 
 
 #navigation {
-    /*top: 14vh;
-    z-index: 1000;*/
     height: 80px;
     background-color: #000;   
     margin-top: 157px;
@@ -28,12 +25,19 @@ p {
     height: 10em;
     width: 110em;
 }
+
+
+
 @media (min-width: 768px) {
     .navbar-nav.navbar-center {
         position: absolute;
         left: 50%;
         transform: translatex(-50%);
     }
+
+    .top {
+    padding-top: 250px;
+}
 }
 
 @media (max-width: 1500px) {
@@ -51,10 +55,6 @@ p {
         transform: translatex(0%);
     }
 
-    #navigation {
-        top: 11.5vh;
-    }
-
     .header {
         width: 97.55vw
     }
@@ -70,15 +70,19 @@ p {
         background-color: #fff;
     }
 
-   .row .top {
-        padding-top: 35vh;
+   .top {
+       padding-top: 165px;
     }
 
   .header {
       height: 5em;
   }
+
+  #navigation {
+      margin-top: 97px;
+      height: 0px;
+  }
+
 }
 
-.top {
-    padding-top: 250px;
-}
+

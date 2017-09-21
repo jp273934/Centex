@@ -62,9 +62,7 @@ p {
 
 
 
-@media (max-width: 768px) {
-   
-
+@media (max-width: 768px) {   
     .navbar-nav li {
         color: #000;
         background-color: #fff;
@@ -82,7 +80,6 @@ p {
       margin-top: 97px;
       height: 0px;
   }
-
 }
 
 

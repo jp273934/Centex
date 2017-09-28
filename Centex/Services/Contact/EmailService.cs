@@ -8,7 +8,7 @@ namespace Centex.Services.Contact
         public void SendEmail(Models.Contact message)
         {
             var fromAddress = new MailAddress("jparris195@gmail.com", "Jeremy Parris");
-            var toAddress = new MailAddress("jparris195@gmail.com", "Jeremy Parris");
+            var toAddress = new MailAddress("angelo@cmhandling.com", "Angelo DiMaria");
 
             //const string fromPassword = "gamer37man";
             const string subject = "Centext website test message";

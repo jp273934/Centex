@@ -1,10 +1,11 @@
 ﻿<h2>Contact Us</h2>
 <div ng-app="app" ng-controller="ContactController">
+    <span> <b>Phone : </b> 512 - 337 - 8181</span>
     <div ng-show="showPanel">
         <ng-form name="ContactForm" novalidate>
             <fieldset>
                 <div class="form-group">
-                <label class="control-label">First Name</label><br/>
+                    <label class="control-label">First Name</label><br/>
                     <span ng-show="ContactForm.firstName.$invalid && isSubmitted" class="text-danger">First Name is required</span>
                     <input class="form-control" type="text" ng-model="contact.FirstName" name="firstName" ng-required="true">
                 </div>
@@ -34,7 +35,7 @@
                     <a href="#" class="btn btn-primary" ng-click="sendMessage()">Send Message</a>
                 </div>
             </fieldset>
-          
+
         </ng-form>
     </div>
 

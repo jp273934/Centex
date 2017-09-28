@@ -40,7 +40,7 @@ namespace Centex.Services.ServiceObjects
             var descriptions = new List<string>
             {
                 "CMH provides preventative maintenance services for various material handling equipment including overhead cranes and conveyors.",
-                "CMH's purpose is to help our customers avoid or mitigate the consequences of equipment failure. CMH preserves and restores your equipment failure. CMH preserverves and restores your equipment by identifying and replacing worn components before they fail. We use extensive step-by-step check lists specific to your equipments OEM."
+                "CMH's purpose is to help our customers avoid or mitigate the consequences of equipment failure. CMH preserverves and restores your equipment by identifying and replacing worn components before they fail. We use extensive step-by-step check lists specific to your equipments OEM."
             };
 
             return new ServiceModel

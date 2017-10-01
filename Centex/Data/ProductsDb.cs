@@ -34,7 +34,7 @@ namespace Centex.Data
                 },
                 new Product
                 {
-                    Id = 1, Title = "Cranes", Descriptions = new Descriptions
+                    Id = 1, Title = "Overhead Cranes", Descriptions = new Descriptions
                     {
                         MainDescriptions = _productDescriptionsService.GetDescriptionsById(1),
                         SubDescriptions = _subDescripttionService.GetSubDescriptionsByParentId(1),                       
@@ -54,7 +54,7 @@ namespace Centex.Data
                 },
                 new Product
                 {
-                    Id = 3, Title = "Shelvings", Descriptions = new Descriptions
+                    Id = 3, Title = "Shelving", Descriptions = new Descriptions
                     {
                        MainDescriptions = _productDescriptionsService.GetDescriptionsById(3),
                        SubDescriptions = _subDescripttionService.GetSubDescriptionsByParentId(3)

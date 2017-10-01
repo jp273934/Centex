@@ -67,7 +67,7 @@ namespace Centex.Services.Catalog
                    new CatalogItem
                 {
                     Id = 9,
-                    Name = "Cranes",
+                    Name = "Overhead Cranes",
                     Url = "http://centexmaterialhandling.theonlinecatalog.com/store/cranes/"
                 },
                    new CatalogItem

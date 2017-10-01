@@ -25,7 +25,6 @@ namespace Centex.Services
                     return _productService.GetProduct((Categories.ProductCategories) itemId);
                 case Categories.ItemType.Service:
                     return new ProductViewModel();
-                    break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(type), type, null);
             }

@@ -56,7 +56,7 @@ namespace Centex.Services.Products
           
             var product = new ProductViewModel
             {
-                Title = "Cranes",
+                Title = "Overhead Cranes",
                 ProductType = Categories.ItemType.Product,
                 Product = _productsDb.GetProductById(1),
                 ListDescriptions = listDescriptions,
@@ -96,7 +96,7 @@ namespace Centex.Services.Products
         {           
             var product = new ProductViewModel
             {
-                Title = "Shelvings",
+                Title = "Shelving",
                 ProductType = Categories.ItemType.Product,
                 Product = _productsDb.GetProductById(3),
                 CatalogId = 38

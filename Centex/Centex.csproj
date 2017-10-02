@@ -1815,6 +1815,7 @@
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductDescriptionsService.cs" />
     <Compile Include="Models\ServiceModel.cs" />
+    <Compile Include="Models\SingleDescription.cs" />
     <Compile Include="Models\SubDescriptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Catalog\CatalogService.cs" />

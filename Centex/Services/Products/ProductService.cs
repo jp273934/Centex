@@ -3,7 +3,6 @@ using Centex.Models;
 using Centex.Services.Products.Interfaces;
 using Centex.ViewModels;
 using System;
-using System.Collections.Generic;
 
 namespace Centex.Services.Products
 {
@@ -40,26 +39,13 @@ namespace Centex.Services.Products
 
         private ProductViewModel GetCrane()
         {           
-            var listDescriptions = new List<string>
-            {
-                "Emergency Repair 24 hour availability",
-                "Repair Most brands of hoists and cranes",
-                "Crane & Hoist Repair Parts for all brands",
-                "Service Scheduled preventative maintenance programs",
-                "Load Testing Certified proof load testing of cranes & hoists",
-                "OSHA Certifications Inspections and testing for OSHA compliance",
-                "Modernization, Modification, and upgrades to your existing crane systems",
-                "Below the Hook Slings, spreader bars, lifting attachments",
-                "Ergonomic Systems Light capacity handling systems for assembly, warehouse and distribution handling",
-                "Turnkey Crane Systems "
-            };
+            
           
             var product = new ProductViewModel
             {
                 Title = "Overhead Cranes",
                 ProductType = Categories.ItemType.Product,
                 Product = _productsDb.GetProductById(1),
-                ListDescriptions = listDescriptions,
                 CatalogId = 9
             };
 

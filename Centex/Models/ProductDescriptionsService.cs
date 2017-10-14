@@ -95,6 +95,25 @@ namespace Centex.Models
                             DescriptionBody = "Warehouse mezzanines and catwalks allow you to greatly increase the utilization of your square footage. Increase space efficiency and organization of your facility with a catwalk or mezzanine platform. Warehouse Mezzanines efficiently use the height of a facility, while doubling or even tripling the surface area. Mezzanines can be the most economical way to increase warehouse space without having to expand or relocate from Southern California. There are many important factors to consider when designing a mezzanine, including access-ways, work systems, products, and handling methods in order to plan accurately. Mezzanines may be completely disassembled; the parts re-used; and the structure, dimensions, and location easily modified."
                         }
                     }
+                },
+                new Descriptions
+                {
+                    Id = 6,
+                    MainDescriptions = new List<SingleDescription>
+                    {
+                        new SingleDescription
+                        {
+                            DescriptionBody = "A Fall Arrest System is an active means of protecting workers from injury due to falls. A complete personal fall arrest system includes an anchor, a body harness and a connector- such as a shock-absorbing fall arrest lanyard or self-retracting lanyard (SRL). "
+                        },
+                        new SingleDescription
+                        {
+                            DescriptionBody = "Using a Rigid Rail Fall Arrest System as your anchor provides workers with a high degree of mobility and freedom, while preventing falls to lower levels. Standard systems are designed to accommodate multiple workers, each weighing up to 310 pounds with tools."
+                        },
+                        new SingleDescription
+                        {
+                            DescriptionBody = "A Rigid Rail Fall Arrest Systems provide a reliable and cost-effective solution for reducing the risk of injury in elevated work environments. Available in various configurations, including multiple track profiles and support center distances, fall protection can be easily customized to fit every budget and application. All systems are designed by qualified engineers to meet the OSHA 1926 Subpart M construction standard, as well as the ANSI Z359 Fall Protection code."
+                        }
+                    }
                 }
             };
         }

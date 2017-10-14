@@ -81,6 +81,16 @@ namespace Centex.Data
                     },
                     Photos = _productImagesDb.GetPhotosByParentId(5),
                     ModalIds = new List<string> {"firstModal", "secondModal", "thirdModal", "fourthModal", "fifthModal", "sixthModal", "seventhModal", "eightModal", "ninthModal" }
+                },
+                new Product
+                {
+                    Id = 6, Title = "Fall Protection Systems", Descriptions = new Descriptions
+                    {
+                        MainDescriptions = _productDescriptionsService.GetDescriptionsById(6),
+                        SubDescriptions = _subDescripttionService.GetSubDescriptionsByParentId(6)
+                    },
+                    Photos = _productImagesDb.GetPhotosByParentId(6),
+                    ModalIds = new List<string>{ "firstModal", "secondModal", "thirdModal", "fourthModal", "fifthModal", "sixthModal"}
                 }
             };
         }

@@ -15,7 +15,8 @@
             DockEquipment,
             Shelvings,
             Conveyors,
-            Messanines
+            Messanines,
+            Protection
         }
     }
 }

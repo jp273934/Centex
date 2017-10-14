@@ -223,6 +223,12 @@
     <Content Include="Images\Products\PalletRacks\3_thumb.jpg" />
     <Content Include="Images\Products\PalletRacks\4_thumb.jpg" />
     <Content Include="Images\Products\PalletRacks\5_thumb.jpg" />
+    <Content Include="Images\Products\Protection\Bridge.png" />
+    <Content Include="Images\Products\Protection\CeilingMounted.png" />
+    <Content Include="Images\Products\Protection\Fold.png" />
+    <Content Include="Images\Products\Protection\MobileFall.jpg" />
+    <Content Include="Images\Products\Protection\Monorail.png" />
+    <Content Include="Images\Products\Protection\SwingArm.png" />
     <Content Include="Images\Products\Shelvings\Archive Shelving.jpg" />
     <Content Include="Images\Products\Shelvings\Automotive Shelving.jpg" />
     <Content Include="Images\Products\Shelvings\Boltless PB Shelving.jpg" />

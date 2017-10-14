@@ -16,6 +16,7 @@ namespace Centex.Data
             const string converyorPath = "Conveyors/";
             const string dockPath = "DockEquipment/";
             const string mezzaninePath = "Mezzanines/";
+            const string protectionPath = "Protection/";
 
             return new List<Photo>
             {
@@ -229,6 +230,42 @@ namespace Centex.Data
                     FilePath = RootPath + mezzaninePath + "image004.jpg",
                     ImageDescription = "Image of a mezzanine"
                 },
+                new Photo
+                {
+                    ParentId = 6,
+                    FilePath = RootPath + protectionPath + "Bridge.png",
+                    ImageDescription = "Image of a bridge system"
+                },
+                new Photo
+                {
+                    ParentId = 6,
+                    FilePath = RootPath + protectionPath + "Monorail.png",
+                    ImageDescription = "Image of a free standing cantilevered monorail"
+                },
+                new Photo
+                {
+                    ParentId = 6,
+                    FilePath = RootPath + protectionPath + "CeilingMounted.png",
+                    ImageDescription = "Image of a ceiling mounted monorail system"
+                },
+                new Photo
+                {
+                    ParentId = 6,
+                    FilePath = RootPath + protectionPath + "Fold.png",
+                    ImageDescription = "Image of a fold away system"
+                },
+                new Photo
+                {
+                    ParentId = 6,
+                    FilePath = RootPath + protectionPath + "SwingArm.png",
+                    ImageDescription = "Image of a swing arm systems"
+                },
+                new Photo
+                {
+                    ParentId = 6,
+                    FilePath = RootPath + protectionPath + "MobileFall.jpg",
+                    ImageDescription = "Image of a mobile fall protection systems"
+                }
             };
         }
 

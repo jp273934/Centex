@@ -376,6 +376,60 @@ namespace Centex.Services
                              ""
                          }
                      },
+                     new SubDescriptions
+                     {
+                         ParentId = 6,
+                         Title = "Bridge System",
+                         Descriptions = new List<string>
+                         {
+                             ""
+                         }
+                     },
+                      new SubDescriptions
+                     {
+                         ParentId = 6,
+                         Title = "Free Standing Cantilevered Monorail",
+                         Descriptions = new List<string>
+                         {
+                             ""
+                         }
+                     },
+                      new SubDescriptions
+                     {
+                         ParentId = 6,
+                         Title = "Ceiling Mounted Monorail System",
+                         Descriptions = new List<string>
+                         {
+                             ""
+                         }
+                     },
+                      new SubDescriptions
+                     {
+                         ParentId = 6,
+                         Title = "Fold Away Systems",
+                         Descriptions = new List<string>
+                         {
+                             ""
+                         }
+                     },
+                     new SubDescriptions
+                     {
+                         ParentId = 6,
+                         Title = "Swing Arm Systems",
+                         Descriptions = new List<string>
+                         {
+                             ""
+                         }
+                     },
+                     new SubDescriptions
+                     {
+                         ParentId = 6,
+                         Title = "Mobile Fall Protection Systems",
+                         Descriptions = new List<string>
+                         {
+                             ""
+                         }
+                     }
             };
         }
 

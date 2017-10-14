@@ -32,6 +32,8 @@ namespace Centex.Services.Products
                         return GetConveyors();
                     case Categories.ProductCategories.Messanines:
                         return GetMessanine();
+                    case Categories.ProductCategories.Protection:
+                        return GetProtectionSystems();
                    default:
                        throw  new Exception("Category not found");
             }
@@ -114,6 +116,18 @@ namespace Centex.Services.Products
                 ProductType = Categories.ItemType.Product,
                 Product = _productsDb.GetProductById(5),
                 CatalogId = 45
+            };
+
+            return product;
+        }
+
+        private ProductViewModel GetProtectionSystems()
+        {
+            var product = new ProductViewModel
+            {
+                Title = "Fall Protection Systems",
+                ProductType = Categories.ItemType.Product,
+                Product = _productsDb.GetProductById(6),
             };
 
             return product;

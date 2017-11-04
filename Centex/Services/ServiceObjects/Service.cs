@@ -62,7 +62,7 @@ namespace Centex.Services.ServiceObjects
             return new ServiceModel
             {
                 ImagePath = "/Images/loadtest.jpg",
-                Title = "Certified Load Test",
+                Title = "Load Test",
                 Descriptions = descriptions
             };
         }

@@ -5,13 +5,12 @@ namespace Centex.Services.Contact
 {
     public class EmailService : IEmailService
     {
-        public void SendEmail(Models.Contact message)
+        public void SendEmail(Models.Contact message, string address, string name)
         {
-            var fromAddress = new MailAddress("jparris195@gmail.com", "Jeremy Parris");
-            var toAddress = new MailAddress("angelo@cmhandling.com", "Angelo DiMaria");
+            var fromAddress = new MailAddress("service@cmhandling.com");
+            var toAddress = new MailAddress(address, name);
 
-            //const string fromPassword = "gamer37man";
-            const string subject = "Centext website test message";
+            const string subject = "PRODUCT/SERVICE INQUARY";
             string body = "<b>Name : <b>" + message.FirstName + " " + message.LastName + "<br/>" +
                           "<b>Email : </b>" + message.Email + "<br/>" +
                           "<b>Address : </b>" + message.AddressOne + "<br/>" + 

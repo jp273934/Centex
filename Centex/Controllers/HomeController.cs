@@ -57,7 +57,13 @@ namespace Centex.Controllers
         [HttpPost]
         public JsonResult SendMessage(Contact message)
         {
-            _emailService.SendEmail(message);
+            var firstAddress = "angelo@cmhandling.com";
+            var firstName = "Angelo DiMaria";
+            var secondAddress = "ross@cmhandling.com";
+            var secondName = "Ross Robertson";
+
+            _emailService.SendEmail(message, firstAddress, firstName);
+            _emailService.SendEmail(message, secondAddress, secondName);
 
             return Json("Succes", JsonRequestBehavior.AllowGet);
         }

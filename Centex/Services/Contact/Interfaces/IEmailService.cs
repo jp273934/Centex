@@ -2,6 +2,6 @@
 {
     public interface IEmailService
     {
-        void SendEmail(Models.Contact message);
+        void SendEmail(Models.Contact message, string address, string name);
     }
 }

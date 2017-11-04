@@ -12,7 +12,13 @@ namespace Centex.Controllers.api
         {
             var service = new EmailService();
 
-            service.SendEmail(message);
+            var firstAddress = "angelo@cmhandling.com";
+            var firstName = "Angelo DiMaria";
+            var secondAddress = "ross@cmhandling.com";
+            var secondName = "Ross Robertson";
+
+            service.SendEmail(message, firstAddress, firstName);
+            service.SendEmail(message, secondAddress, secondName);
 
             return Ok();
         }

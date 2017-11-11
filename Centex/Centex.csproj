@@ -178,7 +178,6 @@
     <Content Include="Images\Header\interlake.png" />
     <Content Include="Images\Header\justrite.png" />
     <Content Include="Images\Header\Quantum.png" />
-    <Content Include="Images\loadtest.jpg" />
     <Content Include="Images\Logos\Akro.png" />
     <Content Include="Images\Logos\crane.png" />
     <Content Include="Images\Logos\Demag.png" />
@@ -191,7 +190,6 @@
     <Content Include="Images\Logos\PioneerLeveler.jpg" />
     <Content Include="Images\Logos\QuantunShelving.jpg" />
     <Content Include="Images\Main_Desc.png" />
-    <Content Include="Images\modification.jpg" />
     <Content Include="Images\Pallet.jpg" />
     <Content Include="Images\Logos\PalletRockLogo.png" />
     <Content Include="Images\Products\Conveyors\Ball Transfer Table.jpg" />
@@ -235,6 +233,20 @@
     <Content Include="Images\Products\Shelvings\Clip Shelving.jpg" />
     <Content Include="Images\Products\Shelvings\Widespan shelving.jpg" />
     <Content Include="Images\Products\Shelvings\Wire Shelving.jpg" />
+    <Content Include="Images\Services\LoadTest\1-100 tons 270x360.bmp" />
+    <Content Include="Images\Services\LoadTest\20160806_194242.jpg" />
+    <Content Include="Images\Services\LoadTest\20160916_121359.jpg" />
+    <Content Include="Images\Services\LoadTest\20170526_185033.jpg" />
+    <Content Include="Images\Services\LoadTest\20170824_155911.jpg" />
+    <Content Include="Images\Services\LoadTest\5 ton conventional crane system demag.jpg" />
+    <Content Include="Images\Services\LoadTest\Jib crane load test overhead pic.jpg" />
+    <Content Include="Images\Services\Mods\20160102_125757.jpg" />
+    <Content Include="Images\Services\Mods\20160807_185329.jpg" />
+    <Content Include="Images\Services\Mods\20170728_113452.jpg" />
+    <Content Include="Images\Services\Mods\20170728_114435.jpg" />
+    <Content Include="Images\Services\Mods\DSC_0058.JPG" />
+    <Content Include="Images\Services\Mods\DSC_0574.JPG" />
+    <Content Include="Images\Services\Mods\Modifications &amp; Upgrades Picture.JPG" />
     <Content Include="img\glyphicons-halflings-white.png" />
     <Content Include="img\glyphicons-halflings.png" />
     <Content Include="node_modules\bootstrap-material-design\.idea\encodings.xml" />
@@ -1053,9 +1065,7 @@
     <Content Include="node_modules\jquery\README.md" />
     <Content Include="node_modules\jquery\src\.eslintrc.json" />
     <None Include="Properties\PublishProfiles\Centex.pubxml" />
-    <Content Include="Images\preventative.jpg" />
     <Content Include="Images\RecyclingEquipment.jpg" />
-    <Content Include="Images\tearout.jpg" />
     <Content Include="Images\WireShelving.jpg" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
     <Content Include="Scripts\i18n\angular-locale_af-za.js" />
@@ -1808,6 +1818,7 @@
     <Compile Include="Data\IProductsDb.cs" />
     <Compile Include="Data\ProductImagesDb.cs" />
     <Compile Include="Data\ProductsDb.cs" />
+    <Compile Include="Data\ServicesDb.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1839,7 +1850,9 @@
     <Compile Include="Services\ServiceObjects\Interfaces\IService.cs" />
     <Compile Include="Services\Home\PanelService.cs" />
     <Compile Include="Services\Products\ProductService.cs" />
+    <Compile Include="Services\ServiceObjects\Interfaces\IServicesDb.cs" />
     <Compile Include="Services\ServiceObjects\Service.cs" />
+    <Compile Include="Services\ServiceObjects\ServiceDescription.cs" />
     <Compile Include="Services\SubDescripttionService.cs" />
     <Compile Include="ViewModels\HomeViewModel.cs" />
     <Compile Include="ViewModels\IITemViewModel.cs" />
@@ -1869,7 +1882,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\Services\" />
     <Folder Include="Scripts\Controllers\api\" />
   </ItemGroup>
   <PropertyGroup>

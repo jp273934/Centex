@@ -84,6 +84,7 @@ namespace Centex.App_Start
             kernel.Bind<ISubDescripttionService>().To<SubDescripttionService>();
             kernel.Bind<IProductDescriptionsService>().To<ProductDescriptionsService>();
             kernel.Bind<IProductImagesDb>().To<ProductImagesDb>();
+            kernel.Bind<IServicesDb>().To<ServicesDb>();
         }        
     }
 }

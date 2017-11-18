@@ -48,7 +48,7 @@ namespace Centex.Data
                         },
                         new ServiceDescription
                         {
-                            Description = "Call CMH for all your OSHA for all your OSHA and ANSI load test requirements."
+                            Description = "Call CMH for all your OSHA and ANSI load test requirements."
                         }
                     }
                 },
@@ -96,14 +96,14 @@ namespace Centex.Data
                 new ServiceModel
                 {
                     Id = 4,
-                    Title = "Modification and Upgrades",
+                    Title = "Modernization and Upgrades",
                     Images = new List<string>{ RootPath + modsPath + "20160102_125757.jpg", RootPath + modsPath + "20160807_185329.jpg", RootPath + modsPath + "20170728_113452.jpg", RootPath + modsPath + "20170728_114435.jpg", RootPath + modsPath + "DSC_0058.jpg", RootPath + modsPath + "DSC_0574.jpg", RootPath + modsPath + "Modifications & Upgrades Picture.jpg"},
                     Descriptions = new List<ServiceDescription>
                     {
                         new ServiceDescription
                         {
                             Description = "CMH provides modernization & Upgrades to Overhead Cranes, including:",
-                            Items = new List<string>{ "Complete wiring testing & replacement", "Variable Frequency Drive (VFD) Upgrades", "Complete control and panel replacement", "Capacity upgrades", "Span changes", "Wireless Radio Control systems", "Pendant control upgrades", "Runway power conduct upgrades/ add ground conductor", "Festoon track upgrades/replacement", "Crane decommissioning" }
+                            Items = new List<string>{ "Complete wiring testing & replacement", "Variable Frequency Drive (VFD) Upgrades", "Complete control panel replacement", "Capacity upgrades", "Span changes", "Wireless Radio Control systems", "Pendant control upgrades", "Runway power conduct upgrades/ add ground conductor", "Festoon track upgrades/replacement", "Crane decommissioning" }
                         },
                         new ServiceDescription
                         {

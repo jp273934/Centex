@@ -247,6 +247,9 @@
     <Content Include="Images\Services\Mods\DSC_0058.JPG" />
     <Content Include="Images\Services\Mods\DSC_0574.JPG" />
     <Content Include="Images\Services\Mods\Modifications &amp; Upgrades Picture.JPG" />
+    <Content Include="Images\UsedEquipment\WildeckMezzanine\20180306_094850.jpg" />
+    <Content Include="Images\UsedEquipment\WildeckMezzanine\20180306_094918.jpg" />
+    <Content Include="Images\UsedEquipment\WildeckMezzanine\20180306_094923.jpg" />
     <Content Include="img\glyphicons-halflings-white.png" />
     <Content Include="img\glyphicons-halflings.png" />
     <Content Include="node_modules\bootstrap-material-design\.idea\encodings.xml" />

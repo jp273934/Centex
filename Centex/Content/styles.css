@@ -32,8 +32,8 @@ p {
 @media (min-width: 768px) {
     .navbar-nav.navbar-center {
         position: absolute;
-        left: 50%;
-        transform: translatex(-50%);
+        left: 40%;
+        transform: translatex(-20%);
     }
 
     .top {
@@ -52,8 +52,8 @@ p {
 @media (max-width: 1600px) {
     .navbar-nav.navbar-center {
         position: absolute;
-        left: 35%;
-        transform: translatex(-20%);
+        left: 0%;
+        transform: translatex(0%);
     }
 }
 

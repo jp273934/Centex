@@ -5,6 +5,7 @@ using Centex.Services.Contact.Interfaces;
 using Centex.Services.Home.Interfaces;
 using Centex.Services.ServiceObjects;
 using Centex.Services.ServiceObjects.Interfaces;
+using System.Collections.Generic;
 using System.Web.Mvc;
 
 namespace Centex.Controllers
@@ -36,6 +37,45 @@ namespace Centex.Controllers
         public ActionResult Service(int Id)
         {
             return View(_service.GetModel((ServiceCategories)Id));
+        }
+
+        public ActionResult UsedEquipment()
+        {
+            var rootPath = "/Images/UsedEquipment/WildeckMezzanine/";
+
+            var descriptions = new List<ServiceDescription>
+            {
+                new ServiceDescription
+                {
+                    Description = "75’ x 40’ overall (2400 Sq. Ft. of usable space)"
+                },
+                new ServiceDescription
+                {
+                    Description = "Guard Rail on 2 sides"
+                },
+                new ServiceDescription
+                {
+                    Description = "Powered Gate"
+                },
+                new ServiceDescription
+                {
+                    Description = "Bar Grated Decking"
+                }
+            };
+            var model = new ServiceModel
+            {
+                Id = 0,
+                Title = "Wildeck Mezzanine",
+                Descriptions = descriptions,
+                Images = new List<string>
+                {
+                    rootPath + "20180306_094850.jpg",
+                    rootPath + "20180306_094918.jpg",
+                    rootPath + "20180306_094923.jpg"
+                }
+            };
+
+            return View("Service" , model);
         }
 
         public ActionResult Product(int Id)

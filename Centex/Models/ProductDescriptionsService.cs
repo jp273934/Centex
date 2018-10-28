@@ -114,6 +114,43 @@ namespace Centex.Models
                             DescriptionBody = "A Rigid Rail Fall Arrest Systems provide a reliable and cost-effective solution for reducing the risk of injury in elevated work environments. Available in various configurations, including multiple track profiles and support center distances, fall protection can be easily customized to fit every budget and application. All systems are designed by qualified engineers to meet the OSHA 1926 Subpart M construction standard, as well as the ANSI Z359 Fall Protection code."
                         }
                     }
+                },
+                new Descriptions
+                {
+                    Id = 7,
+                    MainDescriptions = new List<SingleDescription>
+                    {
+                        new SingleDescription
+                        {
+                            DescriptionBody = "Our DCS-Pro chain hoists ensure maximum precision in gently and safely lifting, lowering and positioning valuable and sensitive parts in assembly operations. Our almost double rated partial load range speed enables lifting motions to be performed more reliably, quickly and efficiently."
+                        }
+                    }
+                },
+                new Descriptions
+                {
+                    Id = 8,
+                    MainDescriptions = new List<SingleDescription>
+                    {
+                        new SingleDescription
+                        {
+                            DescriptionBody = "The DCM-Pro Manulift enables you to handle loads quickly and safely with only one hand. The DCM-Pro is based on the lifting unit of the DC-Pro chain hoist and the DSM-C control unit. Thanks to the control unit which is rigidly connected to the load handling attachment, the operator only needs one hand to operate the hoist and guide the load."
+                        }
+                    }
+                },
+                new Descriptions
+                {
+                    Id = 9,
+                    MainDescriptions = new List<SingleDescription>
+                    {
+                        new SingleDescription
+                        {
+                            DescriptionBody = "Gorbel's G-Force® Intelligent Lifting Devices enable operators to lift and maneuver naturally, as if the devices were an extension of their arms. There are two G-Force® models to choose from: the Q and the iQ. The Q model is our feature packed base model. It offers the same speed and precision as our higher-end iQ model, but without the added Input/Output features that the iQ offers. The iQ model offers a wealth of additional intelligence features. "
+                        },
+                        new SingleDescription
+                        {
+                            DescriptionBody = "Gorbel's G-Force® Intelligent Lifting Devices enable operators to lift and maneuver naturally, as if the devices were an extension of their arms. There are two G-Force® models to choose from: the Q and the iQ. The Q model is our feature packed base model. It offers the same speed and precision as our higher-end iQ model, but without the added Input/Output features that the iQ offers. The iQ model offers a wealth of additional intelligence features. "
+                        }
+                    }
                 }
             };
         }

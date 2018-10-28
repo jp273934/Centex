@@ -16,7 +16,10 @@
             Shelvings,
             Conveyors,
             Messanines,
-            Protection
+            Protection,
+            DemagDcs,
+            DemageDcm,
+            GorbelGForce
         }
     }
 }

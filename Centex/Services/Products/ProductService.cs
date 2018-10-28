@@ -34,6 +34,12 @@ namespace Centex.Services.Products
                         return GetMessanine();
                     case Categories.ProductCategories.Protection:
                         return GetProtectionSystems();
+                    case Categories.ProductCategories.DemagDcs:
+                        return GetDemagDcs();
+                    case Categories.ProductCategories.DemageDcm:
+                        return GetDemagDcm();
+                    case Categories.ProductCategories.GorbelGForce:
+                        return GetGorbelGForce();
                    default:
                        throw  new Exception("Category not found");
             }
@@ -128,6 +134,42 @@ namespace Centex.Services.Products
                 Title = "Fall Protection Systems",
                 ProductType = Categories.ItemType.Product,
                 Product = _productsDb.GetProductById(6),
+            };
+
+            return product;
+        }
+
+        private ProductViewModel GetDemagDcs()
+        {
+            var product = new ProductViewModel
+            {
+                Title = "DEMAG DCS – Pro",
+                ProductType = Categories.ItemType.Product,
+                Product = _productsDb.GetProductById(7)
+            };
+
+            return product;
+        }
+
+        private ProductViewModel GetDemagDcm()
+        {
+            var product = new ProductViewModel
+            {
+                Title = "DEMAG DCM-Pro Manulift",
+                ProductType = Categories.ItemType.Product,
+                Product = _productsDb.GetProductById(8)
+            };
+
+            return product;
+        }
+
+        private ProductViewModel GetGorbelGForce()
+        {
+            var product = new ProductViewModel
+            {
+                Title = "GORBEL G-force",
+                ProductType = Categories.ItemType.Product,
+                Product = _productsDb.GetProductById(9)
             };
 
             return product;

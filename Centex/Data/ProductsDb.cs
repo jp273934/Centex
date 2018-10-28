@@ -91,6 +91,31 @@ namespace Centex.Data
                     },
                     Photos = _productImagesDb.GetPhotosByParentId(6),
                     ModalIds = new List<string>{ "firstModal", "secondModal", "thirdModal", "fourthModal", "fifthModal", "sixthModal"}
+                },
+                new Product
+                {
+                    Id = 7, Title = "DEMAG DCS – Pro", Descriptions = new Descriptions
+                    {
+                        MainDescriptions = _productDescriptionsService.GetDescriptionsById(7),
+                        SubDescriptions = new List<SubDescriptions>()
+                        
+                    }
+                },
+                new Product
+                {
+                    Id = 8, Title = "DEMAG DCM-Pro Manulift", Descriptions = new Descriptions
+                    {
+                        MainDescriptions = _productDescriptionsService.GetDescriptionsById(8),
+                        SubDescriptions = new List<SubDescriptions>()
+                    }
+                },
+                new Product
+                {
+                    Id = 9, Title = "GORBEL G-force", Descriptions = new Descriptions
+                    {
+                        MainDescriptions = _productDescriptionsService.GetDescriptionsById(9),
+                        SubDescriptions = new List<SubDescriptions>(9)
+                    }
                 }
             };
         }

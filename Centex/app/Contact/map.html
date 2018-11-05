@@ -1,0 +1,22 @@
+﻿<style>
+    .map-responsive {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+    }
+
+    .map-responsive {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+</style>
+
+<div class="panel panel-default" ng-init="loadScript()" ng-controller="MapController">
+    <div class="panel-body">
+        <div id="googleMap" style="height: 60vh;" class="map-responsive"></div>
+    </div>
+</div>

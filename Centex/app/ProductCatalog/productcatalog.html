@@ -1,0 +1,19 @@
+﻿
+<style>
+    iframe {
+        height: 3750px;
+        width: 100%;
+    }
+
+    @@media(max-width : 576px) {
+        iframe {
+            height: 8500px;
+        }
+    }
+</style>
+
+<div class="row top">
+    <div class="col-lg-offset-1 col-lg-10">
+        <iframe src="{{ catalogUrl }}" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" title="Product Catalog"></iframe>
+    </div>
+</div>

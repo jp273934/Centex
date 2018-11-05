@@ -145,7 +145,9 @@ namespace Centex.Services.Products
             {
                 Title = "DEMAG DCS – Pro",
                 ProductType = Categories.ItemType.Product,
-                Product = _productsDb.GetProductById(7)
+                Product = _productsDb.GetProductById(7),
+                InfoLink = "https://www.demagcranes.com/en-us/products/hoist-units/chain-hoists/dcs-pro-chain-hoist",
+                DocumentLink = "https://www.demagcranes.com/sites/default/files/media/documents/22932649%20DCS%20Pro%20Chain%20Hoist%20Brochure_0.pdf"
             };
 
             return product;
@@ -157,7 +159,9 @@ namespace Centex.Services.Products
             {
                 Title = "DEMAG DCM-Pro Manulift",
                 ProductType = Categories.ItemType.Product,
-                Product = _productsDb.GetProductById(8)
+                Product = _productsDb.GetProductById(8),
+                InfoLink = "https://www.demagcranes.com/en-us/products/hoist-units/chain-hoists/dcm-pro-manulift",
+                DocumentLink = "https://www.demagcranes.com/sites/default/files/media/documents/22930949%20DC-Pro_DCM-Pro_brochure_0.pdf"
             };
 
             return product;
@@ -169,7 +173,9 @@ namespace Centex.Services.Products
             {
                 Title = "GORBEL G-force",
                 ProductType = Categories.ItemType.Product,
-                Product = _productsDb.GetProductById(9)
+                Product = _productsDb.GetProductById(9),
+                InfoLink = "https://www.gorbel.com/products/ergonomic-lifting/g-force-servo-powered-intelligent-assist-devices",
+                DocumentLink = "https://www.gorbel.com/products/ergonomic-lifting/g-force-servo-powered-intelligent-assist-devices"
             };
 
             return product;

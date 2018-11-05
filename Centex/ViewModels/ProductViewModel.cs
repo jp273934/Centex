@@ -11,5 +11,7 @@ namespace Centex.ViewModels
         public Categories.ItemType ProductType { get; set; }
         public Product Product { get; set; }
         public int CatalogId { get; set; }
+        public string InfoLink { get; set; }
+        public string DocumentLink { get; set; }
     }
 }

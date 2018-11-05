@@ -151,6 +151,34 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\Contact\contact.html" />
+    <Content Include="app\Contact\contactpanel.html" />
+    <Content Include="app\Contact\map.html" />
+    <Content Include="app\Contact\mapcontroller.js" />
+    <Content Include="app\Equipment\equipment.html" />
+    <Content Include="app\Home\home.html" />
+    <Content Include="app\ProductCatalog\catalogcontroller.js" />
+    <Content Include="app\ProductCatalog\productcatalog.html" />
+    <Content Include="app\Products\conveyors.html" />
+    <Content Include="app\Products\demagdcmpromanulift.html" />
+    <Content Include="app\Products\demagdcspro.html" />
+    <Content Include="app\Products\fallprotectionsystems.html" />
+    <Content Include="app\Products\gorbelgforce.html" />
+    <Content Include="app\Products\loadingdockequipment.html" />
+    <Content Include="app\Products\overheadcranes.html" />
+    <Content Include="app\Products\palletracks.html" />
+    <Content Include="app\Products\platformsandladders.html" />
+    <Content Include="app\Products\products.html" />
+    <Content Include="app\Products\productscontroller.js" />
+    <Content Include="app\Products\shelving.html" />
+    <Content Include="app\Products\warehousemezzanines.html" />
+    <Content Include="app\Services\inspectionandrepairls.html" />
+    <Content Include="app\Services\loadtest.html" />
+    <Content Include="app\Services\modernizationandupgrades.html" />
+    <Content Include="app\Services\preventativemainenance.html" />
+    <Content Include="app\Services\relocation.html" />
+    <Content Include="app\Services\services.html" />
+    <Content Include="app\Services\servicescontroller.js" />
     <Content Include="Content\bootstrap-responsive.css" />
     <Content Include="Content\bootstrap-responsive.min.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -603,7 +631,7 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\Controllers\ContactCtrl.js" />
+    <Content Include="app\Contact\ContactCtrl.js" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\angular-touch.min.js.map" />
@@ -1804,7 +1832,7 @@
     <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
-    <Content Include="Scripts\Modules\app.js" />
+    <Content Include="app\Shared\app.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -1876,6 +1904,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
+    <Content Include="Views\Home\PlatformsLadders.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1885,7 +1914,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Scripts\Controllers\api\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

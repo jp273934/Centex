@@ -11,7 +11,7 @@
     <meta name="description" content="Centex Material Handling. Centex Material Handling (CMH) is a distributor, integrator, & service provider of material handling & storage equipment. CMH helps companies safely increase productivity, recapture floor space, reduce errors, decrease cycle times, and increase bottom lines. " />
     <meta name="author" content="Jeremy Parris" />
     <meta name="keywords" content="material, handling, austin, tx, leander, cedar park, centex, Austin, georgetown, killeen, temple, bastrop, travis, williamson, bell, san marcos, county, overhead, cranes, crane, service, inspection, osha, repair, weight, test, load, workstation, jib, gantry, modification, repair, installation, hoist, inspection, weight, conveyor, maintenance, dock, loading, waco, temple, round rock, kyle, new braunfels, belton, ft, fort, hood, copperas, cove" />
-
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
     <!-- Material Design fonts -->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
@@ -22,7 +22,7 @@
     <link href="~/node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.min.css" rel="stylesheet" />
     <link href="~/node_modules/bootstrap-material-design/dist/css/ripples.min.css" rel="stylesheet" />
     <script src="~/Scripts/angular.min.js"></script>
-
+    <script src="~/Scripts/angular-route.min.js"></script>
 
     <script src="~/Scripts/jquery-3.1.1.min.js"></script>
 
@@ -33,8 +33,13 @@
 
     <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
 
-    <script src="~/Scripts/Modules/app.js"></script>
-    <script src="~/Scripts/Controllers/ContactCtrl.js"></script>
+
+    <script src="~/app/Shared/app.js"></script>
+    <script src="~/app/Contact/ContactCtrl.js"></script>
+    <script src="~/app/Services/servicescontroller.js"></script>
+    <script src="~/app/Products/productscontroller.js"></script>
+    <script src="~/app/ProductCatalog/catalogcontroller.js"></script>
+    <script src="~/app/Contact/mapcontroller.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -46,7 +51,7 @@
 
 </head>
 
-<body style="background-color: #fff;">
+<body style="background-color: #fff;" ng-app="app">
 
     <div class="row navbar-fixed-top" style="background-color: #000;">
         <div class="col-xs-12 col-md-7 col-sm-7  col-lg-3 col-lg-offset-3" style="display: none;">
@@ -86,35 +91,37 @@
             <div class="navbar-collapse collapse navbar-responsive-collapse" id="bs-example-navbar-collapse-1">
 
                 <ul class="nav navbar-nav navbar-center" style="margin-top: 10px;">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li><a href="#/!">Home</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Preventive Maintenance", "Service", "Home", new { Id = 0 }, null)</li>
-                            <li>@Html.ActionLink("Load Test", "Service", "Home", new { Id = 1 }, null)</li>
-                            <li>@Html.ActionLink("Inspections and Repairs", "Service", "Home", new { Id = 2 }, null)</li>
-                            <li>@Html.ActionLink("Relocation", "Service", "Home", new { Id = 3 }, null)</li>
-                            <li>@Html.ActionLink("Modernization and Upgrades", "Service", "Home", new { Id = 4 }, null)</li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                        <ul class="dropdown-menu">                          
+                            <li><a href="#!services/preventivemaintenance">Preventive Maintenance</a></li>
+                            <li><a href="#!services/loadtest">Load Test</a></li>
+                            <li><a href="#!services/inspectionandrepairs">Inspections and Repairs</a></li>
+                            <li><a href="#!services/relocation">Relocation</a></li>
+                            <li><a href="#!services/modernizationandupgrades">Modernization and Upgrades</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Popular Products <span class="caret"></span></a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Popular Products <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Overhead Cranes", "Product", "Home", new { Id = 1 }, null)</li>
-                            <li>@Html.ActionLink("Pallet Racks", "Product", "Home", new { Id = 0 }, null)</li>
-                            <li>@Html.ActionLink("Loading Dock Equipment", "Product", "Home", new { Id = 2 }, null)</li>
-                            <li>@Html.ActionLink("Shelving", "Product", "Home", new { Id = 3 }, null)</li>
-                            <li>@Html.ActionLink("Conveyors", "Product", "Home", new { Id = 4 }, null)</li>
-                            <li>@Html.ActionLink("Warehouse Mezzanines", "Product", "Home", new { Id = 5 }, null)</li>
-                            <li>@Html.ActionLink("Fall Protection Systems", "Product", "Home", new { Id = 6 }, null)</li>
-                            <li>@Html.ActionLink("DEMAG DCS – Pro", "Product", "Home", new { Id = 7 }, null)</li>
-                            <li>@Html.ActionLink("DEMAG DCM-Pro Manulift", "Product", "Home", new { Id = 8 }, null)</li>
-                            <li>@Html.ActionLink("GORBEL G-force", "Product", "Home", new { Id = 9 }, null)</li>
+                            <li><a href="#!products/overheadcranes">Overhead Cranes</a></li>
+                            <li><a href="#!products/palletracks">Pallet Racks</a></li>
+                            <li><a href="#!products/loadingdockequipment">Loading Dock Equipment</a></li>
+                            <li><a href="#!products/shelving">Shelving</a></li>
+                            <li><a href="#!products/conveyors">Conveyors</a></li>
+                            <li><a href="#!products/warehousemezzanines">Warehouse Mezzanines</a></li>
+                            <li><a href="#!products/fallprotectionsystems">Fall Protection Systems</a></li>
+                            <li><a href="#!products/demagdcspro">DEMAG DCS – Pro</a></li>
+                            <li><a href="#!products/demagdcmpromanulift">DEMAG DCM-Pro Manulift</a></li>
+                            <li><a href="#!products/gorbelgforce">GORBEL G-force</a></li>
+                            <li><a href="#!products/platformsandladders">Platforms & Ladders</a></li>
                         </ul>
                     </li>
-                    <li>@Html.ActionLink("Complete Product Catalog", "Catalog", "Home", new { Id = 48 }, null)</li>
-                    <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Pre-Owned Equipment", "UsedEquipment", "Home")</li>
+                 
+                    <li><a href="#!catalog/main">Complete Product Catalog</a></li>
+                    <li><a href="#!contact">Contact Us</a></li>                 
+                    <li><a href="#!equipment">Pre-Owned Equipment</a></li>
                 </ul>
 
             </div><!-- /.navbar-collapse -->
@@ -123,6 +130,7 @@
 
     <div class="container-fluid">
         @RenderBody();
+        <div ng-view></div>
     </div>
 </body>
 </html>

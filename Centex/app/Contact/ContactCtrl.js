@@ -1,6 +1,4 @@
-﻿(function () {
-    'use strict';
-
+﻿
     app.controller('ContactController', function($scope, $http) {
         $scope.contact = {};
         $scope.isSendingMessage = false;
@@ -23,5 +21,9 @@
                 });
             }          
         };        
+    }).directive('contactPanel', function () {
+        return {
+            templateUrl: '/app/Contact/contactpanel.html'
+        };
     });
-})();
+

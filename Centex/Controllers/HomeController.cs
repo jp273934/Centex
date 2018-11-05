@@ -94,6 +94,11 @@ namespace Centex.Controllers
             return View();
         }
 
+        public ActionResult PlatformsLadders()
+        {
+            return View();
+        }
+
         [HttpPost]
         public JsonResult SendMessage(Contact message)
         {

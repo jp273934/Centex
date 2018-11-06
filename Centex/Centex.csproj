@@ -155,6 +155,7 @@
     <Content Include="app\Contact\contactpanel.html" />
     <Content Include="app\Contact\map.html" />
     <Content Include="app\Contact\mapcontroller.js" />
+    <Content Include="app\Downloads\downloadcontroller.js" />
     <Content Include="app\Equipment\equipment.html" />
     <Content Include="app\Home\home.html" />
     <Content Include="app\ProductCatalog\catalogcontroller.js" />
@@ -1102,6 +1103,7 @@
     <Content Include="node_modules\jquery\package.json" />
     <Content Include="node_modules\jquery\README.md" />
     <Content Include="node_modules\jquery\src\.eslintrc.json" />
+    <Content Include="Brochures\DemagProBrochure.pdf" />
     <None Include="Properties\PublishProfiles\Centex.pubxml" />
     <Content Include="Images\RecyclingEquipment.jpg" />
     <Content Include="Images\WireShelving.jpg" />
@@ -1850,6 +1852,7 @@
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\api\DownloadController.cs" />
     <Compile Include="Controllers\api\EmailController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Data\IProductImagesDb.cs" />

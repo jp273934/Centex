@@ -21,48 +21,78 @@
                 <contact-panel></contact-panel>
             </div>
             <div class="col-xs-12 col-md-3 col-md-pull-9 col-lg-2 col-lg-pull-7 text-center">
-                <img src="/Images/Products/PlatformsAndLadders/AccessStairway.jpg" />
+                <a data-toggle="modal" data-target="#AccessStairwayModal">
+                    <img src="/Images/Products/PlatformsAndLadders/AccessStairway.jpg" />
+                </a>
                 <br />
                 <h4>Access Stairway</h4>
-                <img src="/Images/Products/PlatformsAndLadders/AluminumRollingLadder.jpg" />
+                <a data-toggle="modal" data-target="#AluminumRollingLadderModal">
+                    <img src="/Images/Products/PlatformsAndLadders/AluminumRollingLadder.jpg" />
+                </a>              
                 <br />
                 <h4>Aluminum Rolling Ladder</h4>
-                <img src="/Images/Products/PlatformsAndLadders/CantileverLadder.jpg" />
+                <a data-toggle="modal" data-target="#CantileverLadderModal">
+                    <img src="/Images/Products/PlatformsAndLadders/CantileverLadder.jpg" />
+                </a>
                 <br />
                 <h4>Cantilever Ladder</h4>
-                <img src="/Images/Products/PlatformsAndLadders/CrossOverPlatform.jpg" />
+                <a data-toggle="modal" data-target="#CrossoverPlatformModal">
+                    <img src="/Images/Products/PlatformsAndLadders/CrossOverPlatform.jpg" />
+                </a>
                 <br />
                 <h4>Crossover Platform</h4>
-                <img src="/Images/Products/PlatformsAndLadders/DoubleEntryPlatform.jpg" />
+                <a data-toggle="modal" data-target="#DoubleEntryPlatformModal">
+                    <img src="/Images/Products/PlatformsAndLadders/DoubleEntryPlatform.jpg" />
+                </a>
                 <br />
                 <h4>Double Entry Platform</h4>
-                <img src="/Images/Products/PlatformsAndLadders/FixedLadders.jpg" />
+                <a data-toggle="modal" data-target="#FixedLaddersModal">
+                    <img src="/Images/Products/PlatformsAndLadders/FixedLadders.jpg" />
+                </a>
                 <br />
                 <h4>Fixed Ladders</h4>
-                <img src="/Images/Products/PlatformsAndLadders/ForkLiftWorkPlatform.jpg" />
+                <a data-toggle="modal" data-target="#ForkliftWorkPlatformModal">
+                    <img src="/Images/Products/PlatformsAndLadders/ForkLiftWorkPlatform.jpg" />
+                </a>
                 <br />
                 <h4>Forklift Work Platform</h4>
-                <img src="/Images/Products/PlatformsAndLadders/GasCylinderCabinet.jpg" />
+                <a data-toggle="modal" data-target="#GasCylinderCabinetModal">
+                    <img src="/Images/Products/PlatformsAndLadders/GasCylinderCabinet.jpg" />
+                </a>
                 <h4>Gas Cylinder Cabinet</h4>
-                <img src="/Images/Products/PlatformsAndLadders/IndustrialStairway.jpg" />
+                <a data-toggle="modal" data-target="#IndustrialStairwayModal">
+                    <img src="/Images/Products/PlatformsAndLadders/IndustrialStairway.jpg" />
+                </a>
                 <br />
                 <h4>Industrial Stairway</h4>
-                <img src="/Images/Products/PlatformsAndLadders/MaintenancePlatform.jpg" />
+                <a data-toggle="modal" data-target="#MaintenancePlatformModal">
+                    <img src="/Images/Products/PlatformsAndLadders/MaintenancePlatform.jpg" />
+                </a>
                 <br />
                 <h4>Maintenance Platform</h4>
-                <img src="/Images/Products/PlatformsAndLadders/MobileOfficeStand.jpg" />
+                <a data-toggle="modal" data-target="#MobileOfficeStandModal">
+                    <img src="/Images/Products/PlatformsAndLadders/MobileOfficeStand.jpg" />
+                </a>
                 <br />
                 <h4>Mobile Office Stand</h4>
-                <img src="/Images/Products/PlatformsAndLadders/MobileWorkPlatform.jpg" />
+                <a data-toggle="modal" data-target="#MobileWorkPlatformModal">
+                    <img src="/Images/Products/PlatformsAndLadders/MobileWorkPlatform.jpg" />
+                </a>
                 <br />
                 <h4>Mobile Work Platform</h4>
-                <img src="/Images/Products/PlatformsAndLadders/RollAFoldLadder.jpg" />
+                <a data-toggle="modal" data-target="#RollAFoldLadderModal">
+                    <img src="/Images/Products/PlatformsAndLadders/RollAFoldLadder.jpg" />
+                </a>
                 <br />
                 <h4>Roll A Fold Ladder</h4>
-                <img src="/Images/Products/PlatformsAndLadders/RollingSafetyLadder.jpg" />
+                <a data-toggle="modal" data-target="#RollingSafetyLadderModal">
+                    <img src="/Images/Products/PlatformsAndLadders/RollingSafetyLadder.jpg" />
+                </a>
                 <br />
                 <h4>Rolling Safety Ladder</h4>
-                <img src="/Images/Products/PlatformsAndLadders/RollingStockPicker.jpg" />
+                <a data-toggle="modal" data-target="#RollingStockPickerLadderModal">
+                    <img src="/Images/Products/PlatformsAndLadders/RollingStockPicker.jpg" />
+                </a>
                 <br />
                 <h4>Rolling Stock Picker</h4>
             </div>
@@ -72,36 +102,44 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <!--@for (var i = 0; i < @Model.Product.Descriptions.SubDescriptions.Count(); i++)
-        {
-        <div class="modal fade" id="@Model.Product.ModalIds.ToArray()[i]">
+        <div class="modal fade" id="AccessStairwayModal">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        @if (i < Model.Product.Photos.Count())
-                        {
-                        <h4 style="font-weight: bold;" class="modal-title">@Model.Product.Descriptions.SubDescriptions.ToList()[i].Title</h4>
-                        }
+                        <h4 style="font-weight: bold;" class="modal-title">Access Stairway</h4>
                     </div>
                     <div class="modal-body">
-                        @if (i < Model.Product.Photos.Count())
-                        {
-                        <img src="@Model.Product.Photos.ToList()[i].FilePath" alt="@Model.Product.Photos.ToList()[i].ImageDescription" class="photo" style="float: left; padding-right: 5px;" />
-                        }
 
-                        @foreach (var item in @Model.Product.Descriptions.SubDescriptions.ToList()[i].Descriptions)
-                        {
-                        <p>@item</p>
-                        }
+                        <img src="/Images/Products/PlatformsAndLadders/AccessStairway.jpg" alt="Image of access stairwary" class="photo" style="float: left; padding-right: 5px;" />
+
+                        <p>Our Rolling Safety Ladder provides a mobile solution to access vertical heights. These ladders are made of rugged 1 inch square tube design. They come standard with a weight activated "Lock Step". The handle on the side is designed to release the lock with ease.</p>
+                        <h3>Standard Features</h3>
+
                         <ul>
-                            @if (@Model.Product.Descriptions.SubDescriptions.ToList()[i].ListDescriptions != null && @Model.Product.Descriptions.SubDescriptions.ToList()[i].ListDescriptions.Any())
-                            {
-                            foreach (var item in @Model.Product.Descriptions.SubDescriptions.ToList()[i].ListDescriptions)
-                            {
-                            <li style="font-size: 1.25em;">@item</li>
-                            }
-                            }
+
+                            <li>57 degree slope is standard</li>
+                            <li>30", 24", or 18" wide steps</li>
+                            <li>5 steps and higher utilize the Lock Step</li>
+                            <li>4 steps and shorter are Spring Loaded</li>
+                            <li>
+                                Rubber tips at stabilizing legs
+                            </li>
+                            <li>
+                                14" deep top platform
+                            </li>
+                            <li>
+                                300 lbs load rating
+                            </li>
+                            <li>
+                                1" square tube construction
+                            </li>
+                            <li>
+                                30" handrails if equipped
+                            </li>
+                            <li>
+                                Gray industrial enamel finish
+                            </li>
                         </ul>
                     </div>
                     <div class="modal-footer">
@@ -110,6 +148,718 @@
                 </div>
             </div>
         </div>
-        }-->
+
+        <div class="modal fade" id="AluminumRollingLadderModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 style="font-weight: bold;" class="modal-title">Aluminum Rolling Ladder</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <img src="/Images/Products/PlatformsAndLadders/AluminumRollingLadder.jpg" alt="Image of aluminum rolling ladder" class="photo" style="float: left; padding-right: 5px;" />
+
+                        <p>The aluminum rolling ladder is the lightweight version of our safety rolling ladders. If you’re looking for a ladder that is light and can stand the test of time, consider these. Because of their light weight, these units have a tilt and roll design for easy portability. The grip tape treads are standard, but we can also design them with serrated treads for an even more safe surface.</p>
+                        <h3>Standard Features</h3>
+
+                        <ul>
+
+                            <li>57 degree slope is standard</li>
+                            <li>
+                                18" or 24" wide steps
+                            </li>
+                            <li>
+                                Tilt & Roll design on 5" rigid casters
+                            </li>
+                            <li>
+                                Non-marring rubber tips at stabilizing legs
+                            </li>
+                            <li>
+                                14" deep top platform
+                            </li>
+                            <li>
+                                300 lbs load rating
+                            </li>
+                            <li>
+                                1" square aluminum construction
+                            </li>
+                            <li>
+                                30" handrails if equippe
+                            </li>
+                            <li>
+                                Cleaned mill finish
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="CantileverLadderModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 style="font-weight: bold;" class="modal-title">Cantilever Ladder</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <img src="/Images/Products/PlatformsAndLadders/CantileverLadder.jpg" alt="Image of cantilever ladder" class="photo" style="float: left; padding-right: 5px;" />
+
+                        <p>The cantilever rolling ladder allows workers to go up and over obstacles. The cantilevered portion of the platform is perfect for clearing hard to reach areas, but while still maintaining a high level of safety and rigidity. Our customers use these in aviation, production, and areas with obscure machinery.</p>
+                        <h3>Standard Features</h3>
+
+                        <ul>
+
+                            <li>57 degree slope is standard</li>
+                            <li>
+                                24" wide steps
+                            </li>
+                            <li>
+                                Individually locking casters
+                            </li>
+                            <li>
+                                Overhangs hard to reach areas
+                            </li>
+                            <li>
+                                Several overhang depths to choose from (see catalog)
+                            </li>
+                            <li>
+                                Counterbalance weight at base
+                            </li>
+                            <li>
+                                300 lbs load rating
+                            </li>
+                            <li>
+                                1" square tube construction
+                            </li>
+                            <li>
+                                30" handrails
+                            </li>
+                            <li>
+                                Gray industrial enamel finish
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="CrossoverPlatformModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 style="font-weight: bold;" class="modal-title">Crossover Platform</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <img src="/Images/Products/PlatformsAndLadders/CrossOverPlatform.jpg" alt="Image of crossover platform" class="photo" style="float: left; padding-right: 5px;" />
+
+                        <p>The crossover platform (or crossover ladder) was originally designed to clear conveyor belts for foot traffic. We offer our design in many sizes to clear obstacles of various heights and lengths. On a daily basis we also design crossovers to meet customer’s specific needs. Want one that turns? 10 foot obstacle height? The possibilities are endless</p>
+
+                        <h3>Standard Features</h3>
+
+                        <ul>
+
+                            <li>57 degree slope is standard</li>
+                            <li>
+                                24" wide steps
+                            </li>
+                            <li>
+                                Mounts at legs for bolting or non-marring rubber legs
+                            </li>
+                            <li>
+                                Several clearance sizes to choose from (see catalog)
+                            </li>
+                            <li>
+                                300 lbs load rating
+                            </li>
+                            <li>
+                                1" square tube construction
+                            </li>
+                            <li>
+                                30" handrails
+                            </li>
+                            <li>
+                                1" square tube construction
+                            </li>
+                            <li>
+                                Gray industrial enamel finish
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="DoubleEntryPlatformModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 style="font-weight: bold;" class="modal-title">Double Entry Platform</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <img src="/Images/Products/PlatformsAndLadders/DoubleEntryPlatform.jpg" alt="Image of double entry platform" class="photo" style="float: left; padding-right: 5px;" />
+
+                        <p>The double entry rolling platform is our best selling mobile platform. It has two stairways and no handrail on one side. The lock safe caster locking systems turn this mobile platform into an unmovable stand on all four legs. We create these stands with many sizes and heights. Our customers continue to find new uses for it.</p>
+
+                        <h3>Standard Features</h3>
+
+                        <ul>
+
+                            <li>57 degree slope is standard</li>
+                            <li>
+                                24" or 36"e; wide serrated steps
+                            </li>
+                            <li>
+                                "Step Lock" locking caster system on both ends
+                            </li>
+                            <li>
+                                Several top platform depths to choose from (see catalog)
+                            </li>
+                            <li>
+                                Removable safety chain for access
+                            </li>
+                            <li>
+                                500 lbs load rating
+                            </li>
+                            <li>
+                                1" square tube construction
+                            </li>
+                            <li>
+                                30" handrail on one side
+                            </li>
+                            <li>
+                                Gray industrial enamel finish
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="FixedLaddersModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 style="font-weight: bold;" class="modal-title">Fixed Ladders</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <img src="/Images/Products/PlatformsAndLadders/FixedLadders.jpg" alt="Image of fixed" class="photo" style="float: left; padding-right: 5px;" />
+
+                        <p>Standard vertical ladders and caged ladders are the ladders you typically see on the sides of buildings to access rooftops. After a certain height, depending on your building codes, a cage is required for added safety. Walk-thru style handrails at the top of the ladder allow workers to walk onto the next level with safety in mind. We build these to any height requested by the customer. We also create custom designs to meet specific building codes and customer needs.</p>
+
+                        <h3>Standard Features</h3>
+
+                        <ul>
+
+                            <li>
+                                22" overall width
+                            </li>
+                            <li>
+                                Caged ladders available
+                            </li>
+                            <li>
+                                300 lbs load rating
+                            </li>
+                            <li>
+                                42" handrails if equipped
+                            </li>
+                            <li>
+                                Mounts extend 7" from wall
+                            </li>
+                            <li>
+                                Gray industrial enamel finish
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="ForkliftWorkPlatformModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 style="font-weight: bold;" class="modal-title">Forklift Work Platform</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <img src="/Images/Products/PlatformsAndLadders/ForkLiftWorkPlatform.jpg" alt="Image of forklift work platform" class="photo" style="float: left; padding-right: 5px;" />
+
+                        <!--<p>Standard vertical ladders and caged ladders are the ladders you typically see on the sides of buildings to access rooftops. After a certain height, depending on your building codes, a cage is required for added safety. Walk-thru style handrails at the top of the ladder allow workers to walk onto the next level with safety in mind. We build these to any height requested by the customer. We also create custom designs to meet specific building codes and customer needs.</p>-->
+
+                        <h3>Standard Features</h3>
+
+                        <ul>
+
+                            <li>
+                                1000 lb capacity
+                            </li>
+                            <li>
+                                42" high handrails with midrail
+                            </li>
+                            <li>
+                                2" x 8" centered fork openings
+                            </li>
+                            <li>
+                                10 gauge steel construction
+                            </li>
+                            <li>
+                                Non-skid flooring (diamond plate deck)
+                            </li>
+                            <li>
+                                Easy entry swing gate with latch lock
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="GasCylinderCabinetModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 style="font-weight: bold;" class="modal-title">Gas Cylinder Cabinet</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <img src="/Images/Products/PlatformsAndLadders/GasCylinderCabinet.jpg" alt="Image of gas cylinder cabinet" class="photo" style="float: left; padding-right: 5px;" />
+
+                        <!--<p>Standard vertical ladders and caged ladders are the ladders you typically see on the sides of buildings to access rooftops. After a certain height, depending on your building codes, a cage is required for added safety. Walk-thru style handrails at the top of the ladder allow workers to walk onto the next level with safety in mind. We build these to any height requested by the customer. We also create custom designs to meet specific building codes and customer needs.</p>-->
+
+                        <h3>Standard Features</h3>
+
+                        <ul>
+                            <li>
+                                12 gauge steel construction
+                            </li>
+                            <li>
+                                Expanded metal see-through sides
+                            </li>
+                            <li>
+                                Built in padlock hasp
+                            </li>
+                            <li>
+                                Meets OSHA & NFPA standards
+                            </li>
+                            <li>
+                                Ships knock-down or all-welded
+                            </li>
+                            <li>
+                                Many sizes and capacities to choose from (see catalog)
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="IndustrialStairwayModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 style="font-weight: bold;" class="modal-title">Industrial Stairway</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <img src="/Images/Products/PlatformsAndLadders/IndustrialStairway.jpg" alt="Image of industrial stairway" class="photo" style="float: left; padding-right: 5px;" />
+
+                        <p>The industrial stairway is our strongest and safest stairway we build. Using 10” channel stringers and deep step treads, it has a very gradual 36 degree slope. Instead of our standard 1” tube railing, we use a 1.5” tube to increase its rigidity. We build these stairways to custom heights and widths all the time for our customers. We also can design mid-platforms and top landing platforms.</p>
+
+                        <h3>Standard Features</h3>
+
+                        <ul>
+                            <li>
+                                36 degree slope is standard
+                            </li>
+                            <li>
+                                36" wide x 9.5" deep steps
+                            </li>
+                            <li>
+                                10" heavy duty channel stringers
+                            </li>
+                            <li>
+                                Mounting brackets at both ends for bolting
+                            </li>
+                            <li>
+                                Several lengths to choose from (see catalog)
+                            </li>
+                            <li>
+                                1000 lbs load rating
+                            </li>
+                            <li>
+                                1.5" square tube construction
+                            </li>
+                            <li>
+                                32" handrails (42" when required)
+                            </li>
+                            <li>
+                                Gray industrial enamel finish
+                            </li>
+                            <li>
+                                Ships as one welded piece for optimal strength
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="MaintenancePlatformModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 style="font-weight: bold;" class="modal-title">Maintenance Platform</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <img src="/Images/Products/PlatformsAndLadders/MaintenancePlatform.jpg" alt="Image of maintenance platform" class="photo" style="float: left; padding-right: 5px;" />
+
+                        <p>The mobile maintenance platform is a strong tilt and roll style ladder. The top railing is fortified to allow a removable safety chain for workers to climb to other areas. These were originally intended for accessing the backs of freight trucks, but our customers have found a plethora of uses.</p>
+
+                        <h3>Standard Features</h3>
+
+                        <ul>
+                            <li>
+                                57 degree slope is standard
+                            </li>
+                            <li>
+                                24" wide steps
+                            </li>
+                            <li>
+                                Tilt & Roll design on 5" rigid casters
+                            </li>
+                            <li>
+                                21" deep top platform
+                            </li>
+                            <li>
+                                Removable safety chain for access
+                            </li>
+                            <li>
+                                300 lbs load rating
+                            </li>
+                            <li>
+                                1" square tube construction
+                            </li>
+                            <li>
+                                30" handrails
+                            </li>
+                            <li>
+                                Gray industrial enamel finish
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="MobileOfficeStandModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 style="font-weight: bold;" class="modal-title">Mobile Office Stand</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <img src="/Images/Products/PlatformsAndLadders/MobileOfficeStand.jpg" alt="Image of mobile office stand" class="photo" style="float: left; padding-right: 5px;" />
+
+                        <p>We realized that our portable work platforms had a need in the office environment. The mobile office stand has the same construction, but has a less aggressive design. Spring loaded casters and grip tape treads create a comfortable surface for office workers with dress shoes and high heels.</p>
+
+                        <h3>Standard Features</h3>
+
+                        <ul>
+                            <li>
+                                57 degree slope is standard
+                            </li>
+                            <li>
+                                18" or 24" wide steps
+                            </li>
+                            <li>
+                                Spring-loaded automatic casters
+                            </li>
+                            <li>
+                                Non-marring rubber tips at stabilizing legs
+                            </li>
+                            <li>
+                                14" deep top platform
+                            </li>
+                            <li>
+                                300 lbs load rating
+                            </li>
+                            <li>
+                                1" square tube construction
+                            </li>
+                            <li>
+                                30" handrails if equipped
+                            </li>
+                            <li>
+                                Gray industrial enamel finish
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="MobileWorkPlatformModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 style="font-weight: bold;" class="modal-title">Mobile Work Platform</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <img src="/Images/Products/PlatformsAndLadders/MobileWorkPlatform.jpg" alt="Image of mobile work platform" class="photo" style="float: left; padding-right: 5px;" />
+
+                        <p>Our mobile work platforms utilize a tilt and roll design for quick and easy placement to the areas you need them. They provide a safe and stable elevated working surface for those hard to reach operations.</p>
+
+                        <h3>Standard Features</h3>
+
+                        <ul>
+                            <li>
+                                57 degree slope is standard
+                            </li>
+                            <li>
+                                24", or 30" wide steps
+                            </li>
+                            <li>
+                                Tilt & Roll design on 5" rigid casters
+                            </li>
+                            <li>
+                                Non-marring rubber tips at stabilizing legs
+                            </li>
+                            <li>
+                                Platform depths from 21" to 56"
+                            </li>
+                            <li>
+                                500 lbs load rating
+                            </li>
+                            <li>
+                                1" square tube construction
+                            </li>
+                            <li>
+                                30" handrails if equipped
+                            </li>
+                            <li>
+                                Gray industrial enamel finish
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="RollAFoldLadderModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 style="font-weight: bold;" class="modal-title">Roll a Fold Ladder</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <img src="/Images/Products/PlatformsAndLadders/RollAFoldLadder.jpg" alt="Image of roll a fold ladder" class="photo" style="float: left; padding-right: 5px;" />
+
+                        <p>The roll-a-fold ladder provides all the benefits of a safety rolling ladder, but with the added advantage of compact storage. By removing two bolts, the outer legs fold inward and the ladder can be rolled on its tires. The large tires allow the unit to be rolled over rough terrain to access areas where most standard ladders cannot reach.</p>
+
+                        <h3>Standard Features</h3>
+
+                        <ul>
+                            <li>
+                                57 degree slope is standard
+                            </li>
+                            <li>
+                                18" wide steps
+                            </li>
+                            <li>
+                                Tilt & Roll design on 10" semi-pneumatic tires
+                            </li>
+                            <li>
+                                Easy folding with two bolts
+                            </li>
+                            <li>
+                                Non-marring rubber tips at stabilizing legs
+                            </li>
+                            <li>
+                                14" deep top platform
+                            </li>
+                            <li>
+                                300 lbs load rating
+                            </li>
+                            <li>
+                                1" square tube construction
+                            </li>
+                            <li>
+                                30" handrails if equipped
+                            </li>
+                            <li>
+                                Gray industrial enamel finish
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="RollingSafetyLadderModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 style="font-weight: bold;" class="modal-title">Rolling Safety Ladder</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <img src="/Images/Products/PlatformsAndLadders/RollingSafetyLadder.jpg" alt="Image of rolling safety ladder" class="photo" style="float: left; padding-right: 5px;" />
+
+                        <p>Our Rolling Safety Ladder provides a mobile solution to access vertical heights. These ladders are made of rugged 1 inch square tube design. They come standard with a weight activated "Lock Step". The handle on the side is designed to release the lock with ease.</p>
+
+                        <h3>Standard Features</h3>
+
+                        <ul>
+                            <li>
+                                57 degree slope is standard
+                            </li>
+                            <li>
+                                30", 24", or 18" wide steps
+                            </li>
+                            <li>
+                                5 steps and higher utilize the Lock Step
+                            </li>
+                            <li>
+                                4 steps and shorter are Spring Loaded
+                            </li>
+                            <li>
+                                Rubber tips at stabilizing legs
+                            </li>
+                            <li>
+                                14" deep top platform
+                            </li>
+                            <li>
+                                300 lbs load rating
+                            </li>
+                            <li>
+                                1" square tube construction
+                            </li>
+                            <li>
+                                30" handrails if equipped
+                            </li>
+                            <li>
+                                Gray industrial enamel finish
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="RollingStockPickerLadderModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 style="font-weight: bold;" class="modal-title">Rolling Stock Picker Ladder</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <img src="/Images/Products/PlatformsAndLadders/RollingStockPicker.jpg" alt="Image of rolling stock picker ladder" class="photo" style="float: left; padding-right: 5px;" />
+
+                        <p>The rolling stock picker ladder offers all of safety and efficiency of our standard rolling ladder, but has the added benefit of a shelving unit within the frame. This ladder is perfect for stock rooms and areas with storage. Reduce the time it takes to move your ladder and boxes by moving them all at once.</p>
+
+                        <h3>Standard Features</h3>
+
+                        <ul>
+                            <li>
+                                57 degree slope is standard
+                            </li>
+                            <li>
+                                24" wide steps
+                            </li>
+                            <li>
+                                "Lock Safe" step lock casters
+                            </li>
+                            <li>
+                                Non-marring rubber tips at stabilizing legs
+                            </li>
+                            <li>
+                                21" deep top platform
+                            </li>
+                            <li>
+                                3 shelf system (22" x 22") 50 lbs capacity per shelf
+                            </li>
+                            <li>
+                                300 lbs load rating
+                            </li>
+                            <li>
+                                1" square tube construction
+                            </li>
+                            <li>
+                                30" handrails if equipped
+                            </li>
+                            <li>
+                                Gray industrial enamel finish
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

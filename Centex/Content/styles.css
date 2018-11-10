@@ -24,16 +24,19 @@ p {
 .header {
     height: 150px; 
     width: 100%; 
-    /*margin-left: 10vw;*/
 }
 
 
 
 @media (min-width: 768px) {
-    .navbar-nav.navbar-center {
-        position: absolute;
-        left: 24%;
-        transform: translatex(0%);
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
     }
 
     .top {
@@ -41,33 +44,6 @@ p {
     }
 }
 
-@media (max-width: 1500px) {
-    .navbar-nav.navbar-center {
-        position: absolute;
-        left: 0%;
-        transform: translatex(10%);
-    }
-}
-
-@media (max-width: 1600px) {
-    .navbar-nav.navbar-center {
-        position: absolute;
-        left: 50%;
-        transform: translatex(50%);
-    }
-}
-
-@media (max-width: 1200px) {
-    .navbar-nav.navbar-center {
-        position: absolute;
-        left: 0%;
-        transform: translatex(0%);
-    }
-
-    /*.header {
-        width: 97.55vw
-    }*/
-}
 
 
 

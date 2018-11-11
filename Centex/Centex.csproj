@@ -1864,6 +1864,7 @@
     </Content>
     <Content Include="Views\Home\Service.cshtml" />
     <Content Include="Views\Home\HomePanel.cshtml" />
+    <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\NinjectWebCommon.cs" />

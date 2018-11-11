@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="https://cmhandling.com/#!/" title="Home"  description="Home page">
+    <siteMapNode url="https://cmhandling.com/#!/services/main" title="Services"  description="List of services centex material handling provides. Preventative Maintenance, Load testing, Inspection and repairs, Relocation, Modernization and upgrades" >
+      <siteMapNode url="https://cmhandling.com/#!/services/preventivemaintenance" title="Preventative Maintenance" description="Information about preventative maintenance of material handling equipment, cranes, and conveyors services the centex material handling provides"></siteMapNode>
+      <siteMapNode url="https://cmhandling.com/#!/services/loadtest" title="Load Test" description="Inforamation about load testing services that centex material handling provides for cranes, hoist , and material handling equipment"></siteMapNode>
+      <siteMapNode url="https://cmhandling.com/#!/services/inspectionandrepairs" title="Inpection and Repairs" description="Information about inspection and repairs services that centex material handling provides for cranes and conveyor systems"></siteMapNode>
+      <siteMapNode url="https://cmhandling.com/#!/services/relocation" title="Relocation" description="Information about relocation services that centex material handling provides. New equipment installation services and equipment relocation services. "></siteMapNode>
+      <siteMapNode url="https://cmhandling.com/#!/services/modernizationandupgrades" title="Modernization and Upgrades" description="Information about modernization and upgrades the centex material handlings provides for various material handling equipment."></siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="https://cmhandling.com/#!/products/main" title="Products"  description="List of products that centex material handling sells. overhead cranes, pallet racks, dock equipment, shelving, conveyors, mezzanines, protection systems, demag dcs pro, demag dcs pro manulift, gorbel g force, platforms, ladders" >
+      <siteMapNode url="https://cmhandling.com/#!/products/overheadcranes" title="Overhead Cranes" description="Information about various overhead cranes that centex material handling sells and provides"></siteMapNode>
+      <siteMapNode url="https://cmhandling.com/#!/products/palletracks" title="Pallet Racks" description="Information about pallet racks that centex material handling sells and provides"></siteMapNode>
+      <siteMapNode url="https://cmhandling.com/#!/products/loadingdockequipment" title="Loading Dock Equipment" description="Information about loading dock equipment that centex material handling sells and provides"></siteMapNode>
+      <siteMapNode url="https://cmhandling.com/#!/products/shelving" title="Shelving" description="Information about shelving that centex material handling sells and provides"></siteMapNode>
+      <siteMapNode url="https://cmhandling.com/#!/products/conveyors" title="Conveyors" description="Information about various conveyor systems that centex material handling sells and provides"></siteMapNode>
+      <siteMapNode url="https://cmhandling.com/#!/products/warehousemezzanines" title="Warehouse Mezzanines" description="Information about various mazzanines and catwalks that centex material handling sells and provides"></siteMapNode>
+      <siteMapNode url="https://cmhandling.com/#!/products/fallprotectionsystems" title="Fall Protection Systemss" description="Information about fall protection systems that centex material handling sells and provides"></siteMapNode>
+      <siteMapNode url="https://cmhandling.com/#!/products/demagdcspro" title="Demag Dcs Pro" description="Information about the demag dcs pro chain hoist that centex material handling sells and provides"></siteMapNode>
+      <siteMapNode url="https://cmhandling.com/#!/products/demagdcmpromanulift" title="Demag Dcm Pro Manulift" description="Information about the demag dcm pro manulift that centex material handling sells and provides"></siteMapNode>
+      <siteMapNode url="https://cmhandling.com/#!/products/gorbelgforce" title="Gorbel G force" description="Information about the gorbel g force lifting device that centex material handling sells and provides"></siteMapNode>
+      <siteMapNode url="https://cmhandling.com/#!/products/platformsandladders" title="Platforms and Ladders" description="Information about various platforms and ladders that centex material handling sells and provides"></siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="https://cmhandling.com/#!/catalog/main" title="Product Catalog" description="Page for ordering, purchasing, products from centex material handling">     
+    </siteMapNode>
+    <siteMapNode url="https://cmhandling.com/#!/contact" title="Contact" description="Page for contacting centex material handling"></siteMapNode>
+  </siteMapNode>
+</siteMap>

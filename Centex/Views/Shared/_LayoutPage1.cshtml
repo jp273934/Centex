@@ -36,10 +36,10 @@
     <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
 
 
-    <script src="~/app/Shared/app.js"></script>
+    <script src="~/app/Shared/app.js?version=1"></script>
     <script src="~/app/Contact/ContactCtrl.js"></script>
     <script src="~/app/Services/servicescontroller.js"></script>
-    <script src="~/app/Products/productscontroller.js"></script>
+    <script src="~/app/Products/productscontroller.js?version=1"></script>
     <script src="~/app/ProductCatalog/catalogcontroller.js"></script>
     <script src="~/app/Contact/mapcontroller.js"></script>
     <script src="~/app/Downloads/downloadcontroller.js"></script>
@@ -48,7 +48,23 @@
             $.material.init();
         });
 
+        $(document).on('click', '.navbar-collapse.in', function (e) {
+            if ($(e.target).is('a')) {
+                $(this).collapse('hide');
+            }
+        });
     </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129032524-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129032524-1');
+    </script>
+
     <title>Centex Material Handling Austin, TX</title>
 
 </head>
@@ -110,14 +126,15 @@
                             <li><a href="#!products/overheadcranes">Overhead Cranes</a></li>
                             <li><a href="#!products/palletracks">Pallet Racks</a></li>
                             <li><a href="#!products/loadingdockequipment">Loading Dock Equipment</a></li>
-                            <li><a href="#!products/shelving">Shelving</a></li>
+                            @*<li><a href="#!products/shelving">Shelving</a></li>
                             <li><a href="#!products/conveyors">Conveyors</a></li>
                             <li><a href="#!products/warehousemezzanines">Warehouse Mezzanines</a></li>
                             <li><a href="#!products/fallprotectionsystems">Fall Protection Systems</a></li>
                             <li><a href="#!products/demagdcspro">DEMAG DCS – Pro</a></li>
                             <li><a href="#!products/demagdcmpromanulift">DEMAG DCM-Pro Manulift</a></li>
                             <li><a href="#!products/gorbelgforce">GORBEL G-force</a></li>
-                            <li><a href="#!products/platformsandladders">Platforms & Ladders</a></li>
+                            <li><a href="#!products/platformsandladders">Platforms & Ladders</a></li>*@
+                            <li><a href="#!products/main">View More Products</a></li>
                         </ul>
                     </li>
 

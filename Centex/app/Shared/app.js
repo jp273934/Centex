@@ -4,7 +4,7 @@ var app = angular.module('app', ['ngRoute']);
 app.config(function ($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: '/app/Home/home.html'
+            templateUrl: '/app/Home/home.html?version=1'
         })
         .when('/services/:id', {
             templateUrl: '/app/Services/services.html',

@@ -171,6 +171,7 @@
     <Content Include="app\Products\platformsandladders.html" />
     <Content Include="app\Products\products.html" />
     <Content Include="app\Products\productscontroller.js" />
+    <Content Include="app\Products\productselection.html" />
     <Content Include="app\Products\shelving.html" />
     <Content Include="app\Products\warehousemezzanines.html" />
     <Content Include="app\Services\inspectionandrepairls.html" />

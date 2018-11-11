@@ -23,6 +23,9 @@
             case 'modernizationandupgrades':
                 $scope.servicePath = rootPath + 'modernizationandupgrades.html';
                 break;
+            case 'main':
+                $scope.servicePath = rootPath + 'servicesselection.html';
+                break;
         }
     }
 });

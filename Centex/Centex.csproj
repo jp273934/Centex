@@ -1862,8 +1862,6 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Views\Home\Service.cshtml" />
-    <Content Include="Views\Home\HomePanel.cshtml" />
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
@@ -1925,14 +1923,9 @@
     </Content>
     <Content Include="Views\Shared\_LayoutPage1.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Product.cshtml" />
-    <Content Include="Views\Shared\ContactPanel.cshtml" />
     <Content Include="Scripts\version.json" />
-    <Content Include="Views\Home\Catalog.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
-    <Content Include="Views\Home\PlatformsLadders.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

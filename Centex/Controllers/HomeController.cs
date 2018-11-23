@@ -14,6 +14,7 @@ namespace Centex.Controllers
             _emailService = emailService;          
         }
 
+        [OutputCache(Location = System.Web.UI.OutputCacheLocation.None, NoStore = true)]
         public ActionResult Index()
         {         
             return View();

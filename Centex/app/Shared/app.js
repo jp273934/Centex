@@ -7,10 +7,10 @@ app.config(function ($routeProvider) {
             templateUrl: '/app/Home/home.html?version=1'
         })
         .when('/services/:id', {
-            templateUrl: '/app/Services/services.html',
+            templateUrl: '/app/Services/services.html'
         })
         .when('/products/:id', {
-            templateUrl: '/app/Products/products.html',
+            templateUrl: '/app/Products/products.html?version=3',
             controller: 'ProductController'
         })
         .when('/catalog/:id', {
@@ -22,5 +22,5 @@ app.config(function ($routeProvider) {
         })
         .when('/equipment', {
             templateUrl: '/app/Equipment/equipment.html'
-        })
+        });
 });

@@ -5,7 +5,7 @@
 
     function getProductPath() {
         var rootPath = '/app/Products/';
-
+     
         switch ($routeParams.id) {
             case 'overheadcranes':
                 $scope.productPath = rootPath + 'overheadcranes.html';
@@ -44,5 +44,7 @@
                 $scope.productPath = rootPath + 'productselection.html';
                 break;
         }
+
+        $scope.productPath += '?version=2';
     }
 });

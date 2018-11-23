@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+SC:700,900" rel="stylesheet">
-    <link href="~/Content/styles.css?version=3" rel="stylesheet" />
+    <link href="~/Content/styles.css?version=4" rel="stylesheet" />
 
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link href="~/node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.min.css" rel="stylesheet" />
@@ -39,7 +39,7 @@
     <script src="~/app/Shared/app.js?version=1"></script>
     <script src="~/app/Contact/ContactCtrl.js"></script>
     <script src="~/app/Services/servicescontroller.js?version=1"></script>
-    <script src="~/app/Products/productscontroller.js?version=1"></script>
+    <script src="~/app/Products/productscontroller.js?version=3"></script>
     <script src="~/app/ProductCatalog/catalogcontroller.js"></script>
     <script src="~/app/Contact/mapcontroller.js"></script>
     <script src="~/app/Downloads/downloadcontroller.js"></script>
@@ -70,8 +70,8 @@
 </head>
 
 <body style="background-color: #fff;" ng-app="app">
-    @*<img src="~/Images/Header/CentexHeaderOrange.png" class="header" />*@
-    <div class="row navbar-fixed-top" style="background-color: #000;">
+   
+    <div class="row navbar-fixed-top" style="background-color : #000;">
         <div class="col-xs-12 col-md-7 col-sm-7  col-lg-3 col-lg-offset-2" style="display: none;">
             <span style="">Centex Material Handling</span>
         </div>
@@ -83,8 +83,9 @@
             <span style="color: #fff; font-size: 1.5em; font-family: Copperplate, Copperplate Gothic Light, fantasy;">PH: 512-337-8181</span><br />
             <span style="color: #fff; font-size: 1.5em; font-family: Copperplate, Copperplate Gothic Light, fantasy;">FAX: 512-646-2661</span>
         </div>
-        <div class="col-lg-12">
-            <img src="~/Images/Header/CentexHeaderOrange.png" class="header" />
+        <div class="col-lg-2 col-md-2"></div>
+        <div class="col-lg-10">
+            <img src="~/Images/Header/CentexHeaderOrange.png" class="header"/>
             <a href="tel:+15123378181" class="visible-xs" style="color: #fff; padding-left: 25px; font-weight: bold;">Office : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 512-337-8181</a>
             <a href="tel:+15127913284" class="visible-xs" style="color: #fff; padding-left: 25px; font-weight: bold;">24 Emergency Service : 512-791-3284</a>
 
@@ -116,9 +117,7 @@
                             <li><a href="#!services/preventivemaintenance">Preventive Maintenance</a></li>
                             <li><a href="#!services/loadtest">Load Test</a></li>
                             <li><a href="#!services/inspectionandrepairs">Inspections and Repairs</a></li>
-                            <li><a href="#!services/main">View More Services</a></li>
-                            @*<li><a href="#!services/relocation">Relocation</a></li>
-        <li><a href="#!services/modernizationandupgrades">Modernization and Upgrades</a></li>*@
+                            <li><a href="#!services/main">View More Services</a></li>                          
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -127,14 +126,6 @@
                             <li><a href="#!products/overheadcranes">Overhead Cranes</a></li>
                             <li><a href="#!products/palletracks">Pallet Racks</a></li>
                             <li><a href="#!products/loadingdockequipment">Loading Dock Equipment</a></li>
-                            @*<li><a href="#!products/shelving">Shelving</a></li>
-                            <li><a href="#!products/conveyors">Conveyors</a></li>
-                            <li><a href="#!products/warehousemezzanines">Warehouse Mezzanines</a></li>
-                            <li><a href="#!products/fallprotectionsystems">Fall Protection Systems</a></li>
-                            <li><a href="#!products/demagdcspro">DEMAG DCS – Pro</a></li>
-                            <li><a href="#!products/demagdcmpromanulift">DEMAG DCM-Pro Manulift</a></li>
-                            <li><a href="#!products/gorbelgforce">GORBEL G-force</a></li>
-                            <li><a href="#!products/platformsandladders">Platforms & Ladders</a></li>*@
                             <li><a href="#!products/main">View More Products</a></li>
                         </ul>
                     </li>

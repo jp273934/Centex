@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Product";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<style>
+    img {
+        width: 100%;
+        height: 15em;
+    }
+
+    @@media(max-width: 480px) {
+        img {
+            width: 100%;
+            padding-left: 10vw;
+        }
+    }
+</style>
+<script src="~/app/Products/productscontroller.js"></script>
+
+<div ng-controller="ProductController" ng-include="productPath"></div>
+

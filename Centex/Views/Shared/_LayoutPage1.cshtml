@@ -24,7 +24,6 @@
     <link href="~/node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.min.css" rel="stylesheet" />
     <link href="~/node_modules/bootstrap-material-design/dist/css/ripples.min.css" rel="stylesheet" />
     <script src="~/Scripts/angular.min.js"></script>
-    <script src="~/Scripts/angular-route.min.js"></script>
 
     <script src="~/Scripts/jquery-3.1.1.min.js"></script>
 
@@ -37,11 +36,7 @@
 
 
     <script src="~/app/Shared/app.js?version=1"></script>
-    <script src="~/app/Contact/ContactCtrl.js"></script>
-    <script src="~/app/Services/servicescontroller.js?version=1"></script>
-    <script src="~/app/Products/productscontroller.js?version=3"></script>
     <script src="~/app/ProductCatalog/catalogcontroller.js"></script>
-    <script src="~/app/Contact/mapcontroller.js"></script>
     <script src="~/app/Downloads/downloadcontroller.js"></script>
     <script>
         $(document).ready(function () {
@@ -110,29 +105,50 @@
             <div class="navbar-collapse collapse navbar-responsive-collapse" id="bs-example-navbar-collapse-1">
 
                 <ul class="nav navbar-nav navbar-center" style="margin-top: 10px;">
-                    <li><a href="#/!">Home</a></li>
+                    <li>
+                        @Html.ActionLink("Home", "Index", "Home")
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#!services/preventivemaintenance">Preventive Maintenance</a></li>
-                            <li><a href="#!services/loadtest">Load Test</a></li>
-                            <li><a href="#!services/inspectionandrepairs">Inspections and Repairs</a></li>
-                            <li><a href="#!services/main">View More Services</a></li>                          
+                            <li>
+                                @Html.ActionLink("Preventive Maintenance", "PreventativeMaintenance", "Service")
+                            <li>
+                                @Html.ActionLink("Load Test", "LoadTest", "Service")
+                            </li>
+                            <li>
+                                @Html.ActionLink("Inspections and Repairs", "InspectionAndRepairs", "Service")
+                            </li>
+                            <li>
+                                @Html.ActionLink("View More Services", "ServiceSelect", "Service")
+                            </li>                          
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Popular Products <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#!products/overheadcranes">Overhead Cranes</a></li>
-                            <li><a href="#!products/palletracks">Pallet Racks</a></li>
-                            <li><a href="#!products/loadingdockequipment">Loading Dock Equipment</a></li>
-                            <li><a href="#!products/main">View More Products</a></li>
+                            <li>
+                                @Html.ActionLink("Overhead Cranes", "OverheadCranes", "Product")
+                            </li>
+                            <li>
+                                @Html.ActionLink("Pallet Racks", "PalletRacks", "Product")
+                            </li>
+                            <li>
+                                @Html.ActionLink("Loading Dock Equipment", "LoadingDockEquipment", "Product")
+                            </li>
+                            <li>
+                                @Html.ActionLink("View More Products", "ProductSelect", "Product")
+                            </li>
                         </ul>
                     </li>
 
-                    <li><a href="#!catalog/main">Complete Product Catalog</a></li>
-                    <li><a href="#!contact">Contact Us</a></li>
-                    <li><a href="#!equipment">Pre-Owned Equipment</a></li>
+                    <li>
+                        @Html.ActionLink("Complete Product Catalog", "ProductCatalog", "Home", new { type = "main" }, null)
+                    </li>
+                    <li>
+                        @Html.ActionLink("Contact Us", "Contact", "Home")
+                    <li>
+                        @Html.ActionLink("Pre-Owned Equipment", "PreownedEquipment", "Home")
+                    </li>
                 </ul>
 
             </div><!-- /.navbar-collapse -->
@@ -140,8 +156,8 @@
     </nav>
 
     <div class="container-fluid">
+        <br/><br/>
         @RenderBody();
-        <div ng-view></div>
     </div>
 </body>
 </html>

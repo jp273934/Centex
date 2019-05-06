@@ -1,8 +1,28 @@
-﻿<div class="row top">
+﻿
+@{
+    ViewBag.Title = "LoadTest";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<style>
+    img {
+        width: 100%;
+        height: 15em;
+    }
+
+    @@media(max-width: 480px) {
+        img {
+            width: 100%;
+            padding-left: 10vw;
+        }
+    }
+</style>
+
+<div class="row top">
     <div class="col-xs-12">
         <div class="row">
             <div class="col-xs-12 col-lg-5 col-lg-push-3 col-md-6 col-md-push-3">
-                <h2>Load Test</h2>                
+                <h2>Load Test</h2>
                 <p>CMH provides certified load tests for various material handling equipment. Whether you have an overhead crane, hoist, lift or specialty material handling equipment, CMH can test its capacity. Overhead cranes must be weight tested after initial installation or when a crane is altered (as it affects a load bearing component).</p>
 
                 <p>Call CMH for all your OSHA and ANSI load test requirements.</p>
@@ -25,8 +45,8 @@
                 <br /><br />
                 <img src="/Images/Services/LoadTest/5 ton conventional crane system demag.jpg" class="photo" />
                 <br /><br />
-
             </div>
         </div>
     </div>
 </div>
+

@@ -1,16 +1,26 @@
-﻿<style>
+﻿
+@{
+    ViewBag.Title = "Service";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<script src="~/app/Services/servicescontroller.js"></script>
+
+<style>
     .photo {
         width: 12vw;
         height: 17.5vh;
     }
 
-    @media(max-width: 480px) {
+@@media(max-width: 480px) {
         .photo {
             width: 55vw;
             padding-left: 10vw;
         }
     }
 </style>
+
 <div ng-controller="ServiceController" ng-include="servicePath">
-   
+
 </div>
+

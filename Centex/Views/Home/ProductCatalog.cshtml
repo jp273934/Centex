@@ -1,4 +1,11 @@
 ﻿
+@{
+    ViewBag.Title = "ProductCatalog";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<script src="~/app/ProductCatalog/catalogcontroller.js"></script>
+
 <style>
     iframe {
         height: 3750px;
@@ -13,7 +20,8 @@
 </style>
 
 <div class="row top">
-    <div class="col-lg-offset-1 col-lg-10">
+    <div class="col-lg-offset-1 col-lg-10" ng-controller="CatalogController">
         <iframe src="{{ catalogUrl }}" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" title="Product Catalog"></iframe>
     </div>
 </div>
+

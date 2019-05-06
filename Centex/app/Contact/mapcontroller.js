@@ -24,8 +24,4 @@
         }, 500);
     };
 
-}).directive('mapPanel', function () {
-    return {
-        templateUrl: '/app/Contact/map.html'
-    };
 });

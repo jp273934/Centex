@@ -151,37 +151,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\Contact\contact.html" />
-    <Content Include="app\Contact\contactpanel.html" />
-    <Content Include="app\Contact\map.html" />
     <Content Include="app\Contact\mapcontroller.js" />
     <Content Include="app\Downloads\downloadcontroller.js" />
     <Content Include="app\Equipment\equipment.html" />
-    <Content Include="app\Home\home.html" />
     <Content Include="app\ProductCatalog\catalogcontroller.js" />
-    <Content Include="app\ProductCatalog\productcatalog.html" />
-    <Content Include="app\Products\conveyors.html" />
-    <Content Include="app\Products\demagdcmpromanulift.html" />
-    <Content Include="app\Products\demagdcspro.html" />
-    <Content Include="app\Products\fallprotectionsystems.html" />
-    <Content Include="app\Products\gorbelgforce.html" />
-    <Content Include="app\Products\loadingdockequipment.html" />
-    <Content Include="app\Products\overheadcranes.html" />
-    <Content Include="app\Products\palletracks.html" />
-    <Content Include="app\Products\platformsandladders.html" />
-    <Content Include="app\Products\products.html" />
-    <Content Include="app\Products\productscontroller.js" />
-    <Content Include="app\Products\productselection.html" />
-    <Content Include="app\Products\shelving.html" />
-    <Content Include="app\Products\warehousemezzanines.html" />
-    <Content Include="app\Services\inspectionandrepairls.html" />
-    <Content Include="app\Services\loadtest.html" />
-    <Content Include="app\Services\modernizationandupgrades.html" />
-    <Content Include="app\Services\preventativemainenance.html" />
-    <Content Include="app\Services\relocation.html" />
-    <Content Include="app\Services\services.html" />
-    <Content Include="app\Services\servicescontroller.js" />
-    <Content Include="app\Services\servicesselection.html" />
     <Content Include="Content\bootstrap-responsive.css" />
     <Content Include="Content\bootstrap-responsive.min.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -1873,6 +1846,8 @@
     <Compile Include="Controllers\api\DownloadController.cs" />
     <Compile Include="Controllers\api\EmailController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Data\IProductImagesDb.cs" />
     <Compile Include="Data\IProductsDb.cs" />
     <Compile Include="Data\ProductImagesDb.cs" />
@@ -1928,6 +1903,30 @@
     <Content Include="Scripts\version.json" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Partial\Contact.cshtml" />
+    <Content Include="Views\Home\Service.cshtml" />
+    <Content Include="Views\Home\Product.cshtml" />
+    <Content Include="Views\Home\PreownedEquipment.cshtml" />
+    <Content Include="Views\Home\ProductCatalog.cshtml" />
+    <Content Include="Views\Product\OverheadCranes.cshtml" />
+    <Content Include="Views\Product\PalletRacks.cshtml" />
+    <Content Include="Views\Product\LoadingDockEquipment.cshtml" />
+    <Content Include="Views\Product\Shelving.cshtml" />
+    <Content Include="Views\Product\Converyors.cshtml" />
+    <Content Include="Views\Product\WarehouseMezzanines.cshtml" />
+    <Content Include="Views\Product\FallProtectionSystems.cshtml" />
+    <Content Include="Views\Product\DemagDCSPro.cshtml" />
+    <Content Include="Views\Product\DemagDCMProManulift.cshtml" />
+    <Content Include="Views\Product\GorbelGforce.cshtml" />
+    <Content Include="Views\Product\PlatformsAndLadders.cshtml" />
+    <Content Include="Views\Product\ProductSelect.cshtml" />
+    <Content Include="Views\Service\InspectionAndRepairs.cshtml" />
+    <Content Include="Views\Service\LoadTest.cshtml" />
+    <Content Include="Views\Service\ModernizationAndUpgrades.cshtml" />
+    <Content Include="Views\Service\PreventativeMaintenance.cshtml" />
+    <Content Include="Views\Service\Relocation.cshtml" />
+    <Content Include="Views\Service\ServiceSelect.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

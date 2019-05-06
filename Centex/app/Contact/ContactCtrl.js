@@ -21,9 +21,5 @@
                 });
             }          
         };        
-    }).directive('contactPanel', function () {
-        return {
-            templateUrl: '/app/Contact/contactpanel.html'
-        };
     });
 

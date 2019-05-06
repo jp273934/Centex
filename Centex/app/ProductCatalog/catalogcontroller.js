@@ -1,4 +1,4 @@
-﻿app.controller('CatalogController', function ($scope, $sce, $routeParams) {
+﻿app.controller('CatalogController', function ($scope, $sce) {
     $scope.catalogUrl = '';
 
     getCatalogUrl();
@@ -6,7 +6,9 @@
     function getCatalogUrl() {
         var rootPath = 'https://centexmaterialhandling.theonlinecatalog.com/store/';
 
-        switch ($routeParams.id) {
+        var urlParameter = new URLSearchParams(location.search);
+
+        switch (urlParameter.get('type')) {
             case 'bins':
                 $scope.catalogUrl = $sce.trustAsResourceUrl(rootPath + 'bins');
                 break;
@@ -69,6 +71,7 @@
                 break;
             case 'hosecordreels':
                 $scope.catalogUrl = $sce.trustAsResourceUrl(rootPath + 'hose-and-cord-reels');
+                break;
             case 'ladders':
                 $scope.catalogUrl = $sce.trustAsResourceUrl(rootPath + 'ladders');
                 break;

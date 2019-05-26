@@ -29,8 +29,13 @@ namespace Centex.Controllers
             return View();
         }
 
-        public ActionResult Product()
+        public ActionResult Product(int id)
         {
+            if(id == 2)
+            {
+                return RedirectToAction("OverheadCranes", "Product");
+            }
+
             return View();
         }
 

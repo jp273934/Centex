@@ -37,5 +37,25 @@ namespace Centex.Controllers
         {
             return View();
         }
+
+        public ActionResult Preventative_Maintenance()
+        {
+            return View("PreventativeMaintenance");
+        }
+
+        public ActionResult Inspections_And_Repairs()
+        {
+            return View("InspectionAndRepairs");
+        }
+
+        public ActionResult Load_Test()
+        {
+            return View("LoadTest");
+        }
+
+        public ActionResult Modernization_And_Upgrades()
+        {
+            return View("ModernizationAndUpgrades");
+        }
     }
 }
